@@ -197,11 +197,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="WebForm1Prova.aspx" />
+    <Content Include="TournamentStat.aspx" />
     <Content Include="assets\vendor\fonts\boxicons\boxicons.eot" />
     <Content Include="assets\vendor\fonts\boxicons\boxicons.ttf" />
     <Content Include="assets\vendor\fonts\boxicons\boxicons.woff" />
     <Content Include="assets\vendor\fonts\boxicons\boxicons.woff2" />
+    <Content Include="_oldMenu.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -286,12 +287,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1Prova.aspx.cs">
-      <DependentUpon>WebForm1Prova.aspx</DependentUpon>
+    <Compile Include="TournamentStat.aspx.cs">
+      <DependentUpon>TournamentStat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1Prova.aspx.designer.cs">
-      <DependentUpon>WebForm1Prova.aspx</DependentUpon>
+    <Compile Include="TournamentStat.aspx.designer.cs">
+      <DependentUpon>TournamentStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_oldMenu.aspx.cs">
+      <DependentUpon>_oldMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_oldMenu.aspx.designer.cs">
+      <DependentUpon>_oldMenu.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
