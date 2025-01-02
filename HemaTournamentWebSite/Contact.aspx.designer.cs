@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace WebApplication2
+namespace HemaTournamentWebSite
 {
     public partial class Contact
     {

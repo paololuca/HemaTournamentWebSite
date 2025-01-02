@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
-namespace WebApplication2
+namespace HemaTournamentWebSite
 {
     public partial class SiteMaster : MasterPage
     {
@@ -31,6 +31,18 @@ namespace WebApplication2
                 case "contact":
                     SetActiveMenu("contactUsMenu");
                     break;
+                case "dashboard":
+                    SetActiveMenu("dashboardMenu");
+                    break;
+                case "tournamentdates":
+                    SetActiveMenu("datesMenu");
+                    break;
+                case "clubs":
+                    SetActiveMenu("clubsMenu");
+                    break;
+                case "awards":
+                    SetActiveMenu("awardsMenu");
+                    break;
                     //clubsMenu, datesMenu
             }
         }
@@ -40,7 +52,11 @@ namespace WebApplication2
             // Ottieni una lista di tutti gli elementi `<li>` del menu
             List<HtmlGenericControl> menuItems = new List<HtmlGenericControl>
                 {
+                    //dashboardMenu,
+                    //datesMenu,
                     matchesMenu,
+                    clubsMenu,
+                    awardsMenu,
                     aboutMenu,
                     contactUsMenu
                 };

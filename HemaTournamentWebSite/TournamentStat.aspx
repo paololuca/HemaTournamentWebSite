@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="TournamentStat.aspx.cs" Inherits="WebApplication2.WebForm1Prova" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="TournamentStat.aspx.cs" Inherits="HemaTournamentWebSite.WebForm1Prova" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -20,16 +20,20 @@
         </ul>
 
     </div>
-
-
+    <div class="divider"></div>
+    
+    
     <div class="divider"></div>
 
-    <div class="card">
+    <div class="card-action bx-align" >
+        <h3>
+        <asp:label ID="lblTournament" runat="server"></asp:label>
+        <asp:label ID="lblDiscipline" runat="server"></asp:label>
+    </h3>
     </div>
 
     <div class="row my-6">
         <div class="col">
-            
             <div class="nav-align-top mb-6">
                 <ul class="nav nav-pills mb-4 nav-fill" role="tablist">
                     <li class="nav-item mb-1 mb-sm-0">
@@ -62,8 +66,8 @@
                             class="nav-link"
                             role="tab"
                             data-bs-toggle="tab"
-                            data-bs-target="#navs-pills-justified-profile"
-                            aria-controls="navs-pills-justified-profile"
+                            data-bs-target="#navs-pills-justified-final"
+                            aria-controls="navs-pills-justified-final"
                             aria-selected="false">
                             <span class="d-none d-sm-block"><i class="tf-icons bx bx-flag bx-sm me-1_5 align-text-bottom"></i>Final Phases</span><i class="bx bx-user bx-sm d-sm-none"></i>
                         </button>
@@ -74,8 +78,8 @@
                             class="nav-link"
                             role="tab"
                             data-bs-toggle="tab"
-                            data-bs-target="#navs-pills-justified-messages"
-                            aria-controls="navs-pills-justified-messages"
+                            data-bs-target="#navs-pills-justified-other"
+                            aria-controls="navs-pills-justified-other"
                             aria-selected="false">
                             <span class="d-none d-sm-block"><i class="tf-icons bx bx-bar-chart bx-sm me-1_5 align-text-bottom"></i>Stats</span><i class="bx bx-message-square bx-sm d-sm-none"></i>
                         </button>
@@ -93,15 +97,22 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="navs-pills-justified-profile" role="tabpanel">
+
+                        <div class="table-responsive text-nowrap" id="divRankingTable" runat="server">
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="navs-pills-justified-final" role="tabpanel">
                         <p class="mb-0">
-                            classifica
+                            Final
                         </p>
                     </div>
-                    <div class="tab-pane fade" id="navs-pills-justified-messages" role="tabpanel">
+                    <div class="tab-pane fade" id="navs-pills-justified-other" role="tabpanel">
                         <p class="mb-0">
                             Altro
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>

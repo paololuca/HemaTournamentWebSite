@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication2.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HemaTournamentWebSite.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -70,22 +70,22 @@
 
                     <ul class="menu-inner py-1" runat="server">
                         <!-- Tournaments -->
-                        <li class="menu-header small text-uppercase">
+                        <%--<li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Tournaments</span>
                         </li>
 
                         <li class="menu-item" id="dashboardMenu" runat="server">
-                            <a href="#" class="menu-link">
+                            <a href="Dashboard.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-detail"></i>
                                 <div class="text-truncate" data-i18n="Account Settings">Dashboard</div>
                             </a>
                         </li>
                         <li class="menu-item" id="datesMenu" runat="server">
-                            <a href="#" class="menu-link">
+                            <a href="TournamentDates.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-calendar"></i>
-                                <div class="text-truncate" data-i18n="Basic">Dates</div>
+                                <div class="text-truncate" data-i18n="Basic">Tournaments</div>
                             </a>
-                        </li>
+                        </li>--%>
                         <!-- Stats -->
                         <li class="menu-header small text-uppercase"><span class="menu-header-text">Stats</span></li>
                         <!-- Cards -->
@@ -96,13 +96,13 @@
                             </a>
                         </li>
                         <li class="menu-item" id="clubsMenu" runat="server">
-                            <a href="#" class="menu-link">
+                            <a href="Clubs.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-home-alt-2"></i>
                                 <div class="text-truncate" data-i18n="Basic">Clubs</div>
                             </a>
                         </li>
                         <li class="menu-item" id="awardsMenu" runat="server">
-                            <a href="#" class="menu-link">
+                            <a href="Awards.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-medal"></i>
                                 <div class="text-truncate" data-i18n="Basic">Awards</div>
                             </a>

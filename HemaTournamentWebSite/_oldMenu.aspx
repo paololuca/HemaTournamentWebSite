@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="_oldMenu.aspx.cs" Inherits="WebApplication2._oldMenu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="_oldMenu.aspx.cs" Inherits="HemaTournamentWebSite._oldMenu" %>
 
 <!DOCTYPE html>
 

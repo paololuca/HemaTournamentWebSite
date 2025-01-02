@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace WebApplication2
+namespace HemaTournamentWebSite
 {
     public class BundleConfig
     {
