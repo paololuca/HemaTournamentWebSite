@@ -58,7 +58,7 @@
                     <div class="app-brand demo">
                         <a href="Default.aspx" class="app-brand-link">
                             <span class="app-brand-logo demo"></span>
-                            <span class="app-brand-text demo menu-text fw-bold ms-2">Hema</span>
+                            <span class="app-brand-text demo menu-text fw-bold ms-2">Hema<br />Chronicles</span>
                         </a>
 
                         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -70,29 +70,29 @@
 
                     <ul class="menu-inner py-1" runat="server">
                         <!-- Tournaments -->
-                        <%--<li class="menu-header small text-uppercase">
+                        <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Tournaments</span>
                         </li>
 
-                        <li class="menu-item" id="dashboardMenu" runat="server">
+                        <%--<li class="menu-item" id="dashboardMenu" runat="server">
                             <a href="Dashboard.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-detail"></i>
                                 <div class="text-truncate" data-i18n="Account Settings">Dashboard</div>
                             </a>
-                        </li>
+                        </li>--%>
                         <li class="menu-item" id="datesMenu" runat="server">
                             <a href="TournamentDates.aspx" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-calendar"></i>
                                 <div class="text-truncate" data-i18n="Basic">Tournaments</div>
                             </a>
-                        </li>--%>
+                        </li>
                         <!-- Stats -->
                         <li class="menu-header small text-uppercase"><span class="menu-header-text">Stats</span></li>
                         <!-- Cards -->
-                        <li class="menu-item" id="matchesMenu" runat="server">
-                            <a href="TournamentStat.aspx" class="menu-link">
-                                <i class="menu-icon tf-icons bx bx-pie-chart"></i>
-                                <div class="text-truncate" data-i18n="Basic">Matches</div>
+                        <li class="menu-item" id="fightersMenu" runat="server">
+                            <a href="Fighters.aspx" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-male-female"></i>
+                                <div class="text-truncate" data-i18n="Basic">Fighters</div>
                             </a>
                         </li>
                         <li class="menu-item" id="clubsMenu" runat="server">
@@ -122,7 +122,7 @@
                                 <i class="menu-icon tf-icons bx bx-mail-send"></i>
                                 <div class="text-truncate" data-i18n="Basic">Contact Us</div>
                             </a>
-                        </li>                        
+                        </li>
                     </ul>
                 </aside>
                 <!-- / Menu -->
@@ -131,17 +131,17 @@
                 <div class="layout-page">
                     <!-- Navbar -->
 
-                    <%--<nav
+                    <nav
                         class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                         id="layout-navbar">
                         <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
-                            <a class="nav-item nav-link px-0 me-xl-10" href="javascript:void(0)">TITLE
+                            <a class="nav-item nav-link px-0 me-xl-10" href="javascript:void(0)">
                                 <i class="bx bx-menu bx-md"></i>
                                 
                             </a>
                         </div>
 
-                    </nav>--%>
+                    </nav>
 
                     <!-- / Navbar -->
 
@@ -156,12 +156,28 @@
                                     </asp:ContentPlaceHolder>
                                     <hr />
                                     <!-- Footer -->
-                                    <footer>
-                                        <script>
-                                            document.write(new Date().getFullYear());
-                                        </script>
-                                        , made with ❤️ by Pielle using 
-                                        <a href="https://themeselection.com" target="_blank" class="footer-link">ThemeSelection</a>
+                                    <footer class="content-footer footer bg-footer-theme">
+                                        <div class="container-xxl">
+                                            <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                                                <div class="text-body">
+                                                                                ©
+                                                <script>
+                                                    document.write(new Date().getFullYear());
+                                                </script>
+                                                                                2025
+                                                , made with ❤️ by Pielle with 
+                                                <a href="https://themeselection.com" target="_blank" class="footer-link">ThemeSelection</a>
+                                                </div>
+                                                <div class="d-none d-lg-inline-block">
+                                                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                                                    <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                                                    <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
+
+                                                    <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link">Support</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </footer>
                                     <!-- / Footer -->
                                 </div>

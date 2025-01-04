@@ -17,6 +17,66 @@ namespace HemaTournamentWebSite.DAL
         public SqlDalHema()
         { }
 
+        public List<Tournament> LoadTorunaments()
+        {
+            SqlConnection c = null;
+
+            List<Tournament> res = new List<Tournament>();
+
+            try
+            {
+                string commandText = "select * FROM [TOURNAMENT] where Active = 1";
+                c = new SqlConnection(_hemaConnectionString);
+
+                c.Open();
+
+                SqlCommand command = new SqlCommand(commandText, c);
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    res.Add(new Tournament()
+                    {
+                        Id = Convert.ToInt32(reader["IdTorneo"]),
+                        Name = reader["Descrizione"].ToString(),
+                        Active = Convert.ToBoolean(reader["Active"].ToString())
+                    });
+                }
+                return res;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            finally
+            {
+                c.Close();
+            }
+        }
+
+        internal string TestConmnection()
+        {
+            SqlConnection c = null;
+
+            try
+            {
+                c = new SqlConnection(_hemaConnectionString);
+                c.Open();
+
+                return "Connection OK";
+
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+            finally
+            {
+                c.Close();
+            }
+        }
+
         public Tournament LoadTorunamentsDesc(int idTorneo)
         {
             SqlConnection c = null;
@@ -36,7 +96,7 @@ namespace HemaTournamentWebSite.DAL
                     return new Tournament()
                     {
                         Name = reader["Descrizione"].ToString(),
-                        Pools = Convert.ToInt32(reader["Pools"].ToString())
+                        Active = Convert.ToBoolean(reader["Active"])
                     };
                 }
                 return null;
@@ -52,7 +112,7 @@ namespace HemaTournamentWebSite.DAL
             }
         }
 
-        public List<Matches> LoadPoolsMatches(int idTorneo)
+        public List<Matches> LoadPoolsMatches(int idTorneo, int idDisciplina)
         {
             var result = new List<Matches>();
 
@@ -60,7 +120,7 @@ namespace HemaTournamentWebSite.DAL
 
             try
             {
-                string commandText = "select * from [dbo].[POOLS_MATCHES] WHERE IdTorneo = " + idTorneo + " order by IdGirone";
+                string commandText = "select * from [dbo].[POOLS_MATCHES] WHERE IdTorneo = " + idTorneo + " AND IdDisciplina = " + idDisciplina + " order by IdGirone";
                 c = new SqlConnection(_hemaConnectionString);
 
                 c.Open();
@@ -93,7 +153,7 @@ namespace HemaTournamentWebSite.DAL
             }
         }
 
-        public List<Stats> LoadStats(int idTorneo)
+        public List<Stats> LoadStats(int idTorneo, int idDisciplina)
         {
             var result = new List<Stats>();
 
@@ -101,7 +161,7 @@ namespace HemaTournamentWebSite.DAL
 
             try
             {
-                string commandText = "select * FROM POOLS_STATS WHERE IdTorneo = " + idTorneo +
+                string commandText = "select * FROM POOLS_STATS WHERE IdTorneo = " + idTorneo + " AND IdDisciplina = " + idDisciplina +
                     " order by Differenziale desc, Vittorie desc, PuntiFatti desc , PuntiSubiti asc, Ranking desc";
                 c = new SqlConnection(_hemaConnectionString);
 

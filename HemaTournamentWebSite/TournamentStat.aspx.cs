@@ -2,86 +2,132 @@
 using HemaTournamentWebSite.DAL.DAL.Entity;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using WebApplication2.Manager;
 
 namespace HemaTournamentWebSite
 {
     public partial class WebForm1Prova : System.Web.UI.Page
     {
-        private int idTournament;
-        private int idDiscipline;
+        private int tournamentId;
+        private int disciplineId;
+
+        // Simulazione di dati recuperati dal database
+        private List<string> disciplineList = new List<string> { "Spada e Pugnale", "Spada e Rotella", "Spada e Brocchiere", "Spada a due Mani" };
+        private List<string> disciplineIdList = new List<string> { "2", "3", "4", "11" };
+
 
         SqlDalHema hemaEngine = new SqlDalHema();
         private List<Matches> matches;
+        private bool debug;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             // Ricrea gli elementi dinamici sempre, anche durante i postback
             if (!Page.IsPostBack)
             {
-                idTournament = 0;
-                idDiscipline = 0;
             }
 
-            LoadTournamentDropdownItems();
+            debug = ConfigurationManager.AppSettings["Debug"].ToString() == "true";
+
+            if (debug)
+            {
+                lblConnectionStatus.Text = hemaEngine.TestConmnection();
+                lblConnectionStatus.Visible = true;
+            }
+
+            ParseUrlId();
+
+            //LoadTournamentDropdownItems();
             LoadDisciplineDropdownItems();
 
-            matches = hemaEngine.LoadPoolsMatches(30);
-
-            GenerateAccordionItems();
-
-            SetRanking();
         }
 
-        private void LoadTournamentDropdownItems()
+        private void ParseUrlId()
         {
-            // Cancella eventuali elementi esistenti (necessario per evitare duplicati durante i postback)
-            dropdownTournamentMenu.Controls.Clear();
+            // Controllo se i parametri esistono
+            string tournament = Request.QueryString["idTournament"];
+            string discipline = Request.QueryString["idDiscipline"];
 
-            // Simulazione di dati recuperati dal database
-            var tournaments = new List<string> { "Tournament A - Maschile", "Tournament A - Femminile" };
-
-            int tempKey = 0;
-            foreach (var tournament in tournaments)
+            if (!string.IsNullOrEmpty(tournament))
             {
-                // Creazione di un elemento <li>
-                HtmlGenericControl li = new HtmlGenericControl("li");
+                // Fai qualcosa con idTournament
+                tournamentId = int.Parse(tournament);
 
-                // Creazione del pulsante
-                Button button = new Button
-                {
-                    Text = tournament,
-                    CssClass = "dropdown-item", // Stile Bootstrap
-                    CommandArgument = tournament, // Imposta un valore identificativo
-                };
-                button.Attributes.Add("data-value", tempKey.ToString());
+                var tournamentEntity = hemaEngine.LoadTorunamentsDesc(tournamentId);
 
-                button.Click += TournamentDropdownItem_Click; // Associa l'evento Click
+                if (tournamentEntity != null)
+                    lblTournament.Text = tournamentEntity.Name;
+            }
 
-                // Aggiungi il pulsante all'elemento <li>
-                li.Controls.Add(button);
+            if (!string.IsNullOrEmpty(discipline))
+            {
+                // Fai qualcosa con idDiscipline
+                disciplineId = int.Parse(discipline);
 
-                // Aggiungi l'elemento <li> alla lista <ul>
-                dropdownTournamentMenu.Controls.Add(li);
+                if(disciplineId >  0)
+                    lblDiscipline.Text = disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
+            }
 
-                tempKey++;
+            if(tournamentId != 0 && disciplineId != 0)
+            {
+                CreatePoolsTables();
+
+                SetRanking();
             }
         }
+
+        //private void LoadTournamentDropdownItems()
+        //{
+        //    // Cancella eventuali elementi esistenti (necessario per evitare duplicati durante i postback)
+        //    dropdownTournamentMenu.Controls.Clear();
+
+        //    // Simulazione di dati recuperati dal database
+        //    var tournaments = hemaEngine.LoadTorunaments();
+
+        //    if (tournaments == null || tournaments.Count == 0)
+        //        return;
+
+        //    int tempKey = 0;
+        //    foreach (var tournament in tournaments)
+        //    {
+        //        // Creazione di un elemento <li>
+        //        HtmlGenericControl li = new HtmlGenericControl("li");
+
+        //        // Creazione del pulsante
+        //        Button button = new Button
+        //        {
+        //            Text = tournament.Name,
+        //            CssClass = "dropdown-item", // Stile Bootstrap
+        //            CommandArgument = tournament.Name, // Imposta un valore identificativo
+        //        };
+        //        button.Attributes.Add("data-value", tournament.Id.ToString());
+
+        //        button.Click += TournamentDropdownItem_Click; // Associa l'evento Click
+
+        //        // Aggiungi il pulsante all'elemento <li>
+        //        li.Controls.Add(button);
+
+        //        // Aggiungi l'elemento <li> alla lista <ul>
+        //        dropdownTournamentMenu.Controls.Add(li);
+
+        //        tempKey++;
+        //    }
+        //}
 
         private void LoadDisciplineDropdownItems()
         {
             // Cancella eventuali elementi esistenti (necessario per evitare duplicati durante i postback)
             dropdownDisciplineMenu.Controls.Clear();
 
-            // Simulazione di dati recuperati dal database
-            var tournaments = new List<string> { "Spada e Pugnale", "Spada e Rotella", "Spada e brocchiere", "Spada a due mani" };
-
+            
             int tempKey = 0;
-            foreach (var tournament in tournaments)
+            foreach (var tournament in disciplineList)
             {
                 // Creazione di un elemento <li>
                 HtmlGenericControl li = new HtmlGenericControl("li");
@@ -92,10 +138,8 @@ namespace HemaTournamentWebSite
                     Text = tournament,
                     CssClass = "dropdown-item", // Stile Bootstrap
                     CommandArgument = tournament, // Imposta un valore identificativo
-
-
                 };
-                button.Attributes.Add("data-value", tempKey.ToString()); //is the key
+                button.Attributes.Add("data-value", disciplineIdList[tempKey].ToString()); //is the key
 
                 button.Click += DisciplineDropdownItem_Click; // Associa l'evento Click
 
@@ -109,22 +153,27 @@ namespace HemaTournamentWebSite
             }
         }
 
-        protected void TournamentDropdownItem_Click(object sender, EventArgs e)
-        {
-            // Recupera il pulsante cliccato
-            Button clickedButton = sender as Button;
-            if (clickedButton != null)
-            {
-                string selectedTournament = clickedButton.CommandArgument;
-                string customValue = ((Button)sender).Attributes["data-value"];
+        //protected void TournamentDropdownItem_Click(object sender, EventArgs e)
+        //{
+        //    // Recupera il pulsante cliccato
+        //    Button clickedButton = sender as Button;
+        //    if (clickedButton != null)
+        //    {
+        //        string selectedTournament = clickedButton.CommandArgument;
+        //        string customValue = ((Button)sender).Attributes["data-value"];
 
-                // Logica per gestire l'elemento selezionato
-                System.Diagnostics.Debug.WriteLine($"Selected Tournament {selectedTournament} with id {customValue}");
+        //        // Logica per gestire l'elemento selezionato
+        //        System.Diagnostics.Debug.WriteLine($"Selected Tournament {selectedTournament} with id {customValue}");
 
-                lblTournament.Text = selectedTournament;
-                lblDiscipline.Text = "";
-            }
-        }
+        //        idTournament = Convert.ToInt32(customValue);
+        //        lblIdTorneo.Text = customValue;
+        //        idTournament = Convert.ToInt32(lblIdTorneo.Text);
+
+        //        lblTournament.Text = selectedTournament;
+        //        idDiscipline = 0;
+        //        lblDiscipline.Text = "";
+        //    }
+        //}
 
         protected void DisciplineDropdownItem_Click(object sender, EventArgs e)
         {
@@ -138,72 +187,70 @@ namespace HemaTournamentWebSite
                 // Logica per gestire l'elemento selezionato
                 System.Diagnostics.Debug.WriteLine($"Selected discipline {selectedDicipline} with id {customValue}");
 
-                lblDiscipline.Text = " - " + selectedDicipline;
+                disciplineId = Convert.ToInt32(customValue);
+                lblDiscipline.Text = selectedDicipline;
+
+                Response.Redirect("TournamentStat.aspx?idTournament=" + tournamentId+"&idDiscipline="+ disciplineId);
+
             }
         }
 
 
-        private void GenerateAccordionItems()
+        private void CreatePoolsTables()
         {
-            // Supponiamo di avere una lista di pool (ad esempio "Pool 1", "Pool 2", "Pool 3", etc.)
-
-            var tournament = hemaEngine.LoadTorunamentsDesc(30);
-
-            if (tournament == null || matches == null)
+            if (debug)
+            {
+                lblConnectionStatus.Text = "lblIdTorneo = "+ tournamentId + " IdDisciplina = " + disciplineId;
+                lblConnectionStatus.Visible = true;
+            }
+            
+            if (tournamentId == 0 || disciplineId == 0)
                 return;
 
+            var tournament = hemaEngine.LoadTorunamentsDesc(tournamentId);
+
+            matches = hemaEngine.LoadPoolsMatches(tournamentId, disciplineId);
+
+            if (tournament == null || matches == null || matches.Count == 0)
+                return;
+
+            int poolsNumber = matches.Max(m => m.Pool);
+
             // Cicla attraverso i pool e crea un accordion per ognuno
-            for (int i = 0; i< tournament.Pools; i++)
+            for (int i = 0; i< poolsNumber; i++)
             {
                 var pool = matches.Where(x => x.Pool == i + 1).ToList();
 
-                // Creazione del div "card accordion-item"
-                var cardDiv = new HtmlGenericControl("div");
-                cardDiv.Attributes["class"] = "card accordion-item";
+                // Crea il div della card
+                var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                cardDiv.Attributes["class"] = "card";
 
-                // Creazione del "h2" header
-                var headerH2 = new HtmlGenericControl("h2");
-                headerH2.Attributes["class"] = "accordion-header";
-                headerH2.Attributes["id"] = $"headingPool{i}";
+                // Crea l'header della card
+                var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+                cardHeader.Attributes["class"] = "card-header";
+                cardHeader.InnerText = "Pool " + i;
+                cardDiv.Controls.Add(cardHeader);
 
-                // Creazione del bottone
-                var button = new HtmlGenericControl("button");
-                button.Attributes["type"] = "button";
-                button.Attributes["class"] = "accordion-button collapsed";
-                button.Attributes["data-bs-toggle"] = "collapse";
-                button.Attributes["data-bs-target"] = $"#collapsePool{i}";
-                button.Attributes["aria-expanded"] = "false";
-                button.Attributes["aria-controls"] = $"collapsePool{i}";
-                button.InnerText = $"Pool {i}";
+                // Crea il div per la tabella
+                var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                tableDiv.Attributes["class"] = "table-responsive text-nowrap";
 
-                // Aggiunta del bottone all'header
-                headerH2.Controls.Add(button);
+                // Crea la tabella
+                Table table = GenerateTable("Pool " + i, pool); // Metodo esistente per generare la tabella
+                tableDiv.Controls.Add(table);
 
-                // Creazione del div "collapse"
-                var collapseDiv = new HtmlGenericControl("div");
-                collapseDiv.Attributes["id"] = $"collapsePool{i}";
-                collapseDiv.Attributes["class"] = "accordion-collapse collapse";
-                collapseDiv.Attributes["data-bs-parent"] = "#collapsibleSection";
+                // Aggiungi il div della tabella alla card
+                cardDiv.Controls.Add(tableDiv);
 
-                // Creazione del div "accordion-body"
-                var bodyDiv = new HtmlGenericControl("div");
-                bodyDiv.Attributes["class"] = "accordion-body";
-                
-                // Crea la tabella da aggiungere all'interno del body dell'accordion
-                var table = GenerateTable("Pool "+i, pool); // Crea la tabella dinamica
-                bodyDiv.Controls.Add(table);
+                // Aggiungi un HR sotto la card
+                var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+                hr.Attributes["class"] = "my-12";
 
-                // Aggiunta del body al collapse
-                collapseDiv.Controls.Add(bodyDiv);
+                // Aggiungi tutto al div principale
+                var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+                div1.Controls.Add(cardDiv);
+                div1.Controls.Add(hr);
 
-                // Aggiunta dell'header e del collapse al card
-                cardDiv.Controls.Add(headerH2);
-                cardDiv.Controls.Add(collapseDiv);
-
-                // Aggiunta del card al contenitore principale
-                collapsibleSection.Controls.Add(cardDiv);
-
-                
             }
         }
 
@@ -211,7 +258,7 @@ namespace HemaTournamentWebSite
         private Table GenerateTable(string poolName, List<Matches> pool)
         {
             Table table = new Table();
-            table.CssClass = "table table-bordered";
+            table.CssClass = "table table-hover";
 
             // Crea l'intestazione della tabella con allineamento personalizzato
             TableHeaderRow headerRow = new TableHeaderRow();
@@ -259,7 +306,7 @@ namespace HemaTournamentWebSite
                 {
                     Text =
                     p.Double ?
-                    "<span class='badge bg-label-warning me-1'>SI</span>" :
+                    "<span class='badge bg-label-danger me-1'>SI</span>" :
                     "<span class='badge bg-label-success me-1'>NO</span>"
                 };
                 doubleDeathCell.CssClass = "text-center";
@@ -286,7 +333,12 @@ namespace HemaTournamentWebSite
 
         private void SetRanking()
         {
-            var stats = hemaEngine.LoadStats(30);
+            if (disciplineId == 0 || tournamentId == 0)
+                return;
+
+            var stats = hemaEngine.LoadStats(tournamentId, disciplineId);
+
+            int countDeltaNotZero = stats.Select(s => s.Delta != 0).Count();
 
             var atletiAmmessiEliminatorie = stats.Count >= 54 ? 32 :
                          stats.Count >= 24 ? 16 :
@@ -302,6 +354,7 @@ namespace HemaTournamentWebSite
             headerRow.Cells.Add(new TableHeaderCell { Text = "Surname" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Name" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Victory", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
+            headerRow.Cells.Add(new TableHeaderCell { Text = "Loss", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Hit", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Hitted", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Delta", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
@@ -317,13 +370,19 @@ namespace HemaTournamentWebSite
                 TableRow row = new TableRow();
                 row.Cells.Add(new TableCell { Text = (pos + 1).ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
 
-                row.Cells.Add(new TableCell { Text = pos < atletiAmmessiEliminatorie ?  
-                    $"<span class='badge bg-label-success'>YES</span>" :
-                    $"<span class='badge bg-label-warning'>NO</span>"
-                });
+                row.Cells.Add(new TableCell
+                {
+                    Text =
+                    countDeltaNotZero > atletiAmmessiEliminatorie / 2 ?
+                        pos < atletiAmmessiEliminatorie ?
+                            $"<span class='badge bg-label-success'>YES</span>" :
+                            $"<span class='badge bg-label-danger'>NO</span>" :
+                        $"<span></span>"
+                }); ;
                 row.Cells.Add(new TableCell { Text = s.Surname });
                 row.Cells.Add(new TableCell { Text = s.Name });
                 row.Cells.Add(new TableCell { Text = s.Victory.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
+                row.Cells.Add(new TableCell { Text = s.Loss.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
                 row.Cells.Add(new TableCell { Text = s.Hit.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
                 row.Cells.Add(new TableCell { Text = s.Hitted.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
                 row.Cells.Add(new TableCell { Text = s.Delta.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
@@ -336,13 +395,35 @@ namespace HemaTournamentWebSite
 
             // Aggiungi la tabella al div
             divRankingTable.Controls.Add(table);
+
+            SetStats(stats);
+        }
+
+        private void SetStats(List<Stats> stats)
+        {
+            if(stats != null && stats.Count > 0)
+            {
+                kpiDiv.Visible = true;
+
+                var kpi = new StatsKpiCalculator(stats);
+
+                lblBestDelta.Text = $"{kpi.bestDelta?.Delta}";
+                lblMostWins.Text = $"{kpi.mostVictories?.Victory}";
+                lblPointEfficiency.Text = $"{kpi.efficiency:F2}%";
+                lblMostPointScored.Text = $"{kpi.mostPointsHit?.Hit}";
+                lblFewestPointsTaken.Text = $"{kpi.leastPointsHitted?.Hitted}";
+                lblBestranking.Text = $"{kpi.bestRanking?.Ranking}";
+                lblAverageDelta.Text = $"{kpi.avgDelta:F2}";
+                lblBestWinLossRatio.Text = $"{kpi.winLossRatio:F2}";
+                
+            }
         }
 
         private static void SetPointColour(bool doubleDeath, int pointA, int pointB, TableCell pointCell)
         {
-            pointCell.BackColor = doubleDeath ? System.Drawing.Color.OrangeRed :
+            pointCell.BackColor = doubleDeath ? System.Drawing.Color.LightPink :
                 pointA == pointB ? System.Drawing.Color.LightGray :
-                pointA > pointB ? System.Drawing.Color.LightGreen : System.Drawing.Color.Orange;
+                pointA > pointB ? System.Drawing.Color.LightGreen : System.Drawing.Color.LightGray;
         }
     }
 }

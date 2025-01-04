@@ -22,8 +22,8 @@ namespace HemaTournamentWebSite
 
             switch (currentPage.ToLower())
             {
-                case "tournamentstat":
-                    SetActiveMenu("matchesMenu");
+                case "fighters":
+                    SetActiveMenu("fightersMenu");
                     break;
                 case "about":
                     SetActiveMenu("aboutMenu");
@@ -53,8 +53,8 @@ namespace HemaTournamentWebSite
             List<HtmlGenericControl> menuItems = new List<HtmlGenericControl>
                 {
                     //dashboardMenu,
-                    //datesMenu,
-                    matchesMenu,
+                    datesMenu,
+                    fightersMenu,
                     clubsMenu,
                     awardsMenu,
                     aboutMenu,

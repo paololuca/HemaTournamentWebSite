@@ -15,33 +15,6 @@ namespace HemaTournamentWebSite
     {
 
         /// <summary>
-        /// btnTournament control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnTournament;
-
-        /// <summary>
-        /// dropdownTournamentMenu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dropdownTournamentMenu;
-
-        /// <summary>
-        /// Ul1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Ul1;
-
-        /// <summary>
         /// btnDiscipline control.
         /// </summary>
         /// <remarks>
@@ -69,6 +42,15 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Ul2;
 
         /// <summary>
+        /// lblConnectionStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConnectionStatus;
+
+        /// <summary>
         /// lblTournament control.
         /// </summary>
         /// <remarks>
@@ -87,13 +69,13 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.WebControls.Label lblDiscipline;
 
         /// <summary>
-        /// collapsibleSection control.
+        /// div1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl collapsibleSection;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div1;
 
         /// <summary>
         /// divRankingTable control.
@@ -103,5 +85,86 @@ namespace HemaTournamentWebSite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divRankingTable;
+
+        /// <summary>
+        /// kpiDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl kpiDiv;
+
+        /// <summary>
+        /// lblBestDelta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBestDelta;
+
+        /// <summary>
+        /// lblMostWins control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMostWins;
+
+        /// <summary>
+        /// lblPointEfficiency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPointEfficiency;
+
+        /// <summary>
+        /// lblMostPointScored control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMostPointScored;
+
+        /// <summary>
+        /// lblFewestPointsTaken control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFewestPointsTaken;
+
+        /// <summary>
+        /// lblBestranking control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBestranking;
+
+        /// <summary>
+        /// lblAverageDelta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAverageDelta;
+
+        /// <summary>
+        /// lblBestWinLossRatio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBestWinLossRatio;
     }
 }
