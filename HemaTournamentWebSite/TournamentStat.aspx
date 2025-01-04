@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Tournament Stats </h1>
+    <h2>Tournament Stats </h2>
 <%--    <div class="btn-group" runat="server" id="btnTournament">
         <asp:Button type="button" Text="Choose tournament" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
         <ul class="dropdown-menu " runat="server" id="dropdownTournamentMenu">
