@@ -407,12 +407,12 @@ namespace HemaTournamentWebSite
 
                 var kpi = new StatsKpiCalculator(stats);
 
-                lblBestDelta.Text = $"{kpi.bestDelta?.Delta}";
+                lblBestDelta.Text = $"{kpi.bestDelta?.Delta:F2}";
                 lblMostWins.Text = $"{kpi.mostVictories?.Victory}";
                 lblPointEfficiency.Text = $"{kpi.efficiency:F2}%";
                 lblMostPointScored.Text = $"{kpi.mostPointsHit?.Hit}";
                 lblFewestPointsTaken.Text = $"{kpi.leastPointsHitted?.Hitted}";
-                lblBestranking.Text = $"{kpi.bestRanking?.Ranking}";
+                lblBestranking.Text = $"{kpi.bestRanking?.Ranking:F2}";
                 lblAverageDelta.Text = $"{kpi.avgDelta:F2}";
                 lblBestWinLossRatio.Text = $"{kpi.winLossRatio:F2}";
                 

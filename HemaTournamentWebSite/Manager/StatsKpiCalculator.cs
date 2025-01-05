@@ -49,7 +49,7 @@ namespace WebApplication2.Manager
             Console.WriteLine($"Minor Numero di Punti Subiti: {leastPointsHitted?.Name} {leastPointsHitted?.Hitted}");
 
             // 6. Miglior Ranking
-            bestRanking = statsList.OrderBy(s => s.Ranking).FirstOrDefault();
+            bestRanking = statsList.FirstOrDefault();
             Console.WriteLine($"Miglior Ranking: {bestRanking?.Name} {bestRanking?.Ranking}");
 
             // 7. Media Delta

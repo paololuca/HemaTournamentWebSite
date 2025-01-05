@@ -25,7 +25,7 @@ namespace HemaTournamentWebSite.DAL
 
             try
             {
-                string commandText = "select * FROM [TOURNAMENT] where Active = 1";
+                string commandText = "select * FROM [TOURNAMENT]";
                 c = new SqlConnection(_hemaConnectionString);
 
                 c.Open();
@@ -38,9 +38,11 @@ namespace HemaTournamentWebSite.DAL
                     res.Add(new Tournament()
                     {
                         Id = Convert.ToInt32(reader["IdTorneo"]),
-                        Name = reader["Descrizione"].ToString(),
-                        Active = Convert.ToBoolean(reader["Active"].ToString())
-                    });
+                        Name = reader["NomeTorneo"].ToString(),
+                        Place = reader["Luogo"].ToString(),
+                        StartDate = Convert.ToDateTime(reader["DataInizio"].ToString()),
+                        EndDate = Convert.ToDateTime(reader["DataFine"].ToString())
+                    }); ;
                 }
                 return res;
 
@@ -95,8 +97,8 @@ namespace HemaTournamentWebSite.DAL
                 {
                     return new Tournament()
                     {
-                        Name = reader["Descrizione"].ToString(),
-                        Active = Convert.ToBoolean(reader["Active"])
+                        Name = reader["NomeTorneo"].ToString(),
+                        //Active = Convert.ToBoolean(reader["Active"])
                     };
                 }
                 return null;
