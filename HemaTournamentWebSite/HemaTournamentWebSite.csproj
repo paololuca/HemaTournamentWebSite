@@ -128,7 +128,10 @@
     <Content Include="assets\img\elements\TBA.jpg" />
     <Content Include="assets\img\elements\TBA.png" />
     <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2024.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordFemminile.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordMaschile.png" />
     <Content Include="assets\img\favicon\favicon.ico" />
+    <Content Include="assets\img\favicon\swords.ico" />
     <Content Include="assets\img\icons\brands\asana.png" />
     <Content Include="assets\img\icons\brands\behance.png" />
     <Content Include="assets\img\icons\brands\dribbble.png" />
@@ -153,6 +156,7 @@
     <Content Include="assets\img\layouts\layout-fluid-light.png" />
     <Content Include="assets\img\layouts\layout-without-menu-light.png" />
     <Content Include="assets\img\layouts\layout-without-navbar-light.png" />
+    <Content Include="assets\img\swords.png" />
     <Content Include="assets\js\config.js" />
     <Content Include="assets\js\dashboards-analytics.js" />
     <Content Include="assets\js\extended-ui-perfect-scrollbar.js" />

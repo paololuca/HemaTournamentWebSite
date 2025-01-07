@@ -228,7 +228,7 @@ namespace HemaTournamentWebSite
                 // Crea l'header della card
                 var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
                 cardHeader.Attributes["class"] = "card-header";
-                cardHeader.InnerText = "Pool " + i;
+                cardHeader.InnerText = "Pool " + (i + 1);
                 cardDiv.Controls.Add(cardHeader);
 
                 // Crea il div per la tabella
@@ -338,7 +338,7 @@ namespace HemaTournamentWebSite
 
             var stats = hemaEngine.LoadStats(tournamentId, disciplineId);
 
-            int countDeltaNotZero = stats.Select(s => s.Delta != 0).Count();
+            int countDeltaNotZero = stats.Where(s => s.Delta > 0).Count();
 
             var atletiAmmessiEliminatorie = stats.Count >= 54 ? 32 :
                          stats.Count >= 24 ? 16 :
@@ -396,10 +396,10 @@ namespace HemaTournamentWebSite
             // Aggiungi la tabella al div
             divRankingTable.Controls.Add(table);
 
-            SetStats(stats);
+            SetStats(stats, countDeltaNotZero, atletiAmmessiEliminatorie);
         }
 
-        private void SetStats(List<Stats> stats)
+        private void SetStats(List<Stats> stats, int countDeltaNotZero, int atletiAmmessiEliminatorie)
         {
             if(stats != null && stats.Count > 0)
             {
@@ -412,7 +412,7 @@ namespace HemaTournamentWebSite
                 lblPointEfficiency.Text = $"{kpi.efficiency:F2}%";
                 lblMostPointScored.Text = $"{kpi.mostPointsHit?.Hit}";
                 lblFewestPointsTaken.Text = $"{kpi.leastPointsHitted?.Hitted}";
-                lblBestranking.Text = $"{kpi.bestRanking?.Ranking:F2}";
+                lblBestranking.Text = countDeltaNotZero > atletiAmmessiEliminatorie ? $"{kpi.bestRanking?.Ranking:F2}" : "0";
                 lblAverageDelta.Text = $"{kpi.avgDelta:F2}";
                 lblBestWinLossRatio.Text = $"{kpi.winLossRatio:F2}";
                 

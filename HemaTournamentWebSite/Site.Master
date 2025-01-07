@@ -14,7 +14,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/swords.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +44,7 @@
     </asp:PlaceHolder>
 
 
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/swords.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -58,6 +58,7 @@
                     <div class="app-brand demo">
                         <a href="Default.aspx" class="app-brand-link">
                             <span class="app-brand-logo demo"></span>
+                            
                             <span class="app-brand-text demo menu-text fw-bold ms-2">Hema<br />Chronicles</span>
                         </a>
 

@@ -3,11 +3,12 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>HEMA Chronicles</h1><h3 class="mb-2 mx-2">Under Construction! 🚧</h3>
+        <h1><asp:Image ID="Image1" runat="server"  ImageUrl="~/assets/img/swords.png" width="5%"/>HEMA Chronicles</h1>
+        <h3 class="mb-2 mx-2">Under Construction! 🚧</h3>
         <p class="lead">The site provide for you the experience of HEMNA Chronicles: get your achievment and rewards in the hema-tournament.com</p>
     </div>
 
-    <div class="container-xxl container-p-y">
+    <div class="container-p-y">
         <a href="TournamentDates.aspx" class="btn btn-primary">Go to Dates</a>
 
        
