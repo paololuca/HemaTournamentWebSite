@@ -12,7 +12,7 @@
 
     </div>--%>
 
-    <div class="btn-group" runat="server" id="btnDiscipline">
+    <%--<div class="btn-group" runat="server" id="btnDiscipline">--%>
         <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
         <ul class="dropdown-menu" runat="server" id="dropdownDisciplineMenu">
         </ul>
@@ -20,7 +20,6 @@
         </ul>
         <br />
         <asp:Label ID="lblConnectionStatus" runat="server" Visible="false" Text="0"></asp:Label>
-    </div>
     <div class="divider"></div>
 
 
