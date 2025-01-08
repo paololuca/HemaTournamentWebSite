@@ -54,9 +54,9 @@ namespace HemaTournamentWebSite
                 {
                     //dashboardMenu,
                     datesMenu,
-                    fightersMenu,
-                    clubsMenu,
-                    awardsMenu,
+                    //fightersMenu,
+                    //clubsMenu,
+                    //awardsMenu,
                     aboutMenu,
                     contactUsMenu
                 };

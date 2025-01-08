@@ -292,6 +292,7 @@ namespace HemaTournamentWebSite
 
                 // Colonna allineata a sinistra
                 TableCell redFighterCell = new TableCell { Text = p.Fighter1 };
+
                 redFighterCell.CssClass = "text-start";
                 row.Cells.Add(redFighterCell);
 

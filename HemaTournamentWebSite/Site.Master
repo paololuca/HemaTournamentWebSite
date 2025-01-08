@@ -88,7 +88,7 @@
                             </a>
                         </li>
                         <!-- Stats -->
-                        <li class="menu-header small text-uppercase"><span class="menu-header-text">Stats</span></li>
+                        <%--<li class="menu-header small text-uppercase"><span class="menu-header-text">Stats</span></li>
                         <!-- Cards -->
                         <li class="menu-item" id="fightersMenu" runat="server">
                             <a href="Fighters.aspx" class="menu-link">
@@ -107,7 +107,7 @@
                                 <i class="menu-icon tf-icons bx bx-medal"></i>
                                 <div class="text-truncate" data-i18n="Basic">Awards</div>
                             </a>
-                        </li>
+                        </li>--%>
                         <!-- Tournaments -->
                         <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Info</span>
@@ -161,22 +161,21 @@
                                         <div class="container-xxl">
                                             <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
                                                 <div class="text-body">
-                                                                                ©
+                                                      Beta Version 1.1.4 ©
                                                 <script>
                                                     document.write(new Date().getFullYear());
-                                                </script>
-                                                                                2025
-                                                , made with ❤️ by Pielle with 
+                                                </script>- 2026 
+                                                , made with ❤️ by Pielle® with 
                                                 <a href="https://themeselection.com" target="_blank" class="footer-link">ThemeSelection</a>
                                                 </div>
-                                                <div class="d-none d-lg-inline-block">
+                                                <%--<div class="d-none d-lg-inline-block">
                                                     <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
                                                     <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
                                                     <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
 
                                                     <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link">Support</a>
-                                                </div>
+                                                </div>--%>
                                             </div>
                                         </div>
                                     </footer>

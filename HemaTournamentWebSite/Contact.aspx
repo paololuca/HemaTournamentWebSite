@@ -2,9 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Contact page.</h3>
     <address>
-        SAAM Achille MArozzo Bononia
+        SAAM Achille Marozzo Bononia
         @SAAM Nazionale<br />
         <br />
         <abbr title="Phone">P:</abbr>
