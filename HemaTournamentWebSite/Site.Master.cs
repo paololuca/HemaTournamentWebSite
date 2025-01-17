@@ -37,6 +37,9 @@ namespace HemaTournamentWebSite
                 case "tournamentdates":
                     SetActiveMenu("datesMenu");
                     break;
+                case "calendar":
+                    SetActiveMenu("calendarMenu");
+                    break;
                 case "clubs":
                     SetActiveMenu("clubsMenu");
                     break;
@@ -54,8 +57,9 @@ namespace HemaTournamentWebSite
                 {
                     //dashboardMenu,
                     datesMenu,
-                    //fightersMenu,
-                    //clubsMenu,
+                    calendarMenu,
+                    fightersMenu,
+                    clubsMenu,
                     //awardsMenu,
                     aboutMenu,
                     contactUsMenu

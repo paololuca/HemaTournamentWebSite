@@ -15,6 +15,15 @@ namespace HemaTournamentWebSite
     {
 
         /// <summary>
+        /// HeadContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -33,13 +42,31 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl datesMenu;
 
         /// <summary>
-        /// aboutMenu control.
+        /// calendarMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl aboutMenu;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl calendarMenu;
+
+        /// <summary>
+        /// clubsMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl clubsMenu;
+
+        /// <summary>
+        /// fightersMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fightersMenu;
 
         /// <summary>
         /// contactUsMenu control.
@@ -49,6 +76,15 @@ namespace HemaTournamentWebSite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl contactUsMenu;
+
+        /// <summary>
+        /// aboutMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl aboutMenu;
 
         /// <summary>
         /// MainContent control.

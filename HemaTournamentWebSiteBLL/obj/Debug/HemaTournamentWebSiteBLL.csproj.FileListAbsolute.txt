@@ -1,0 +1,6 @@
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.pdb
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.AssemblyReference.cache
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.CoreCompileInputs.cache
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.pdb

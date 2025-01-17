@@ -1,5 +1,5 @@
-﻿using HemaTournamentWebSite.DAL;
-using HemaTournamentWebSite.DAL.Entity;
+﻿using HemaTournamentWebSiteBLL.DAL;
+using HemaTournamentWebSiteBLL.DAL.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,16 +12,16 @@ namespace WebApplication2
 {
     public partial class TournamentDates : System.Web.UI.Page
     {
-        SqlDalHema hemaEngine = new SqlDalHema();
+        SqlTournamentHema hemaEngine = new SqlTournamentHema();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var tournaments = hemaEngine.LoadTorunaments();
+            var tournaments = hemaEngine.LoadTorunaments().OrderByDescending(t => t.EndDate);
 
             if (tournaments != null)
             {
-                AddCardsToActiveTournament(tournaments.Where(t => t.EndDate >= DateTime.Now).ToList());
-                AddCardsToClosedTournament(tournaments.Where(t => t.EndDate < DateTime.Now).ToList());
+                AddCardsToActiveTournament(tournaments.Where(t => t.EndDate.AddDays(1) >= DateTime.Now).ToList());
+                AddCardsToClosedTournament(tournaments.Where(t => t.EndDate.AddDays(1) < DateTime.Now).ToList());
             }
         }
 

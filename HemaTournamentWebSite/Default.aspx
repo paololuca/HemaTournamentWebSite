@@ -4,7 +4,6 @@
 
     <div class="jumbotron">
         <h1><asp:Image ID="Image1" runat="server"  ImageUrl="~/assets/img/swords.png" width="5%"/>HEMA Chronicles</h1>
-        <%--<h3 class="mb-2 mx-2">Under Construction! 🚧</h3>--%>
         <p class="lead">The site provide the experience of HEMA Chronicles: get your achievements and rewards in our tournaments system</p>
     </div>
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HemaTournamentWebSite.DAL.DAL.Entity
+namespace HemaTournamentWebSiteBLL.DAL.DAL.Entity
 {
     public class Stats
     {

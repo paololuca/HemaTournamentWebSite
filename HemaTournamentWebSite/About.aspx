@@ -1,27 +1,37 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="HemaTournamentWebSite.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-<div class="card ">
-      <div class="card-body">
-        <small class="card-text text-uppercase text-muted small">About</small>
-        <ul class="list-unstyled my-3 py-1">
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-user"></i><span class="fw-medium mx-2">Full Name:</span> <span>PL</span></li>
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-check"></i><span class="fw-medium mx-2">Status:</span> <span>Active</span></li>
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-crown"></i><span class="fw-medium mx-2">Role:</span> <span>Developer</span></li>
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-flag"></i><span class="fw-medium mx-2">Country:</span> <span>ITA</span></li>
-          <li class="d-flex align-items-center mb-2"><i class="bx bx-detail"></i><span class="fw-medium mx-2">Languages:</span> <span>English - Italian</span></li>
-        </ul>
-        <small class="card-text text-uppercase text-muted small">Contacts</small>
-        <ul class="list-unstyled my-3 py-1">
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-phone"></i><span class="fw-medium mx-2">Contact:</span> <span>TBD</span></li>
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-chat"></i><span class="fw-medium mx-2">Skype:</span> <span>TBD</span></li>
-          <li class="d-flex align-items-center mb-4"><i class="bx bx-envelope"></i><span class="fw-medium mx-2">Email:</span> <span>TBD</span></li>
-        </ul>
-        <small class="card-text text-uppercase text-muted small">Teams</small>
-        <ul class="list-unstyled mb-0 mt-3 pt-1">
-          <li class="d-flex flex-wrap mb-4"><span class="fw-medium me-2">Backend Developer</span><span>One Man Army</span></li>
-          
-        </ul>
-      </div>
-    </div>
+    / <a href="Default.aspx">Home</a>
+
+    <section class="py-5">
+	<div class="container">
+		<div class="row gx-4 align-items-center justify-content-between">
+			<div class="col-md-5 order-2 order-md-1">
+				<div class="mt-5 mt-md-0">
+					<h2 class="display-5 fw-bold">About Us</h2>
+					<p class="lead">Welcome to the world of <strong>HEMA</strong> (Historical European Martial Arts), where history meets sport, and passion meets competition. For years, we have proudly represented the Italian HEMA community, offering a platform where athletes and enthusiasts can come together to celebrate this unique and captivating discipline.</p>
+					<p class="lead">Each year, <strong>hundreds of athletes</strong> and <strong>dozens of sports associations</strong> participate, making our circuit a cornerstone of the Italian HEMA community. We bring together competitors from diverse backgrounds who share the same passion: the art of historical fencing in a modern, athletic framework.
+  </p></p>
+				</div>
+			</div>
+			<div class="col-md-6 offset-md-1 order-1 order-md-2">
+				<div class="row gx-2 gx-lg-3">
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About1.jpg"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About2.jpg"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About3.jpg"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About4.jpg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+   
 </asp:Content>

@@ -1,5 +1,6 @@
-﻿using HemaTournamentWebSite.DAL;
-using HemaTournamentWebSite.DAL.DAL.Entity;
+﻿using HemaTournamentWebSiteBLL.DAL;
+using HemaTournamentWebSiteBLL.DAL.DAL.Entity;
+using HemaTournamentWebSiteBLL.Manager;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -8,7 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using WebApplication2.Manager;
+using HemaTournamentWebSiteBLL.Manager;
 
 namespace HemaTournamentWebSite
 {
@@ -22,7 +23,11 @@ namespace HemaTournamentWebSite
         private List<string> disciplineIdList = new List<string> { "2", "3", "4", "11" };
 
 
-        SqlDalHema hemaEngine = new SqlDalHema();
+        SqlTournamentHema tournamentEngine = new SqlTournamentHema();
+        SqlPoolsMatchestHema matchtsEngine = new SqlPoolsMatchestHema();
+        SqlPoolsStatstHema statEngine = new SqlPoolsStatstHema();
+        SqlTestConnectionHema testEngine = new SqlTestConnectionHema();
+
         private List<Matches> matches;
         private bool debug;
 
@@ -37,7 +42,7 @@ namespace HemaTournamentWebSite
 
             if (debug)
             {
-                lblConnectionStatus.Text = hemaEngine.TestConmnection();
+                lblConnectionStatus.Text = testEngine.TestConmnection();
                 lblConnectionStatus.Visible = true;
             }
 
@@ -59,7 +64,7 @@ namespace HemaTournamentWebSite
                 // Fai qualcosa con idTournament
                 tournamentId = int.Parse(tournament);
 
-                var tournamentEntity = hemaEngine.LoadTorunamentsDesc(tournamentId);
+                var tournamentEntity = tournamentEngine.LoadTorunamentsDesc(tournamentId);
 
                 if (tournamentEntity != null)
                     lblTournament.Text = tournamentEntity.Name;
@@ -207,9 +212,9 @@ namespace HemaTournamentWebSite
             if (tournamentId == 0 || disciplineId == 0)
                 return;
 
-            var tournament = hemaEngine.LoadTorunamentsDesc(tournamentId);
+            var tournament = tournamentEngine.LoadTorunamentsDesc(tournamentId);
 
-            matches = hemaEngine.LoadPoolsMatches(tournamentId, disciplineId);
+            matches = matchtsEngine.LoadPoolsMatches(tournamentId, disciplineId);
 
             if (tournament == null || matches == null || matches.Count == 0)
                 return;
@@ -262,7 +267,7 @@ namespace HemaTournamentWebSite
 
             // Crea l'intestazione della tabella con allineamento personalizzato
             TableHeaderRow headerRow = new TableHeaderRow();
-
+            headerRow.CssClass = "table-dark";
             TableHeaderCell redFighterHeader = new TableHeaderCell { Text = "Red Fighter" };
             redFighterHeader.CssClass = "text-start"; // Allinea l'intestazione a sinistra
             headerRow.Cells.Add(redFighterHeader);
@@ -307,7 +312,7 @@ namespace HemaTournamentWebSite
                 {
                     Text =
                     p.Double ?
-                    "<span class='badge bg-label-danger me-1'>SI</span>" :
+                    "<span class='badge bg-label-danger me-1'>YES</span>" :
                     "<span class='badge bg-label-success me-1'>NO</span>"
                 };
                 doubleDeathCell.CssClass = "text-center";
@@ -337,7 +342,7 @@ namespace HemaTournamentWebSite
             if (disciplineId == 0 || tournamentId == 0)
                 return;
 
-            var stats = hemaEngine.LoadStats(tournamentId, disciplineId);
+            var stats = statEngine.LoadStats(tournamentId, disciplineId);
 
             int countDeltaNotZero = stats.Where(s => s.Delta > 0).Count();
 

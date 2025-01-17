@@ -1,10 +1,10 @@
-﻿using HemaTournamentWebSite.DAL.DAL.Entity;
+﻿using HemaTournamentWebSiteBLL.DAL.DAL.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication2.Manager
+namespace HemaTournamentWebSiteBLL.Manager
 {
     public class StatsKpiCalculator
     {

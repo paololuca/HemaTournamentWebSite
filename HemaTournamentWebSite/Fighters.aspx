@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Fighters.aspx.cs" Inherits="WebApplication2.Fighters" %>
+﻿<%@ Page Title="Fighters" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Fighters.aspx.cs" Inherits="WebApplication2.Fighters" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    / <a href="Default.aspx">Home</a> / <a href="Clubs.aspx">Clubs</a>
     <div class="container-p-y">
       <div class="misc-wrapper">
         <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>

@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="TournamentStat.aspx.cs" Inherits="HemaTournamentWebSite.WebForm1Prova" %>
+﻿<%@ Page Title="Tournament Stats" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="TournamentStat.aspx.cs" Inherits="HemaTournamentWebSite.WebForm1Prova" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    / <a href="Default.aspx">Home</a> / <a href="TournamentDates.aspx">Tournaments</a>
     <h2>Tournament Stats </h2>
     <%--    <div class="btn-group" runat="server" id="btnTournament">
         <asp:Button type="button" Text="Choose tournament" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
@@ -61,7 +61,7 @@
                             <span class="d-none d-sm-block"><i class="tf-icons bx bx-arrow-to-top bx-sm me-1_5 align-text-bottom"></i>Ranking</span><i class="bx bx-user bx-sm d-sm-none"></i>
                         </button>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mb-1 mb-sm-0">
                         <button
                             type="button"
                             class="nav-link"
@@ -88,7 +88,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="navs-pills-justified-home" role="tabpanel">
-                        <div class="table-responsive text-nowrap" id="div1" runat="server">
+                        <div class="text-nowrap" id="div1" runat="server">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="navs-pills-justified-profile" role="tabpanel">
@@ -383,7 +383,6 @@
 
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
