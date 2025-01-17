@@ -22,6 +22,9 @@ namespace HemaTournamentWebSite
 
             switch (currentPage.ToLower())
             {
+                case "default":
+                    SetActiveMenu("homeMenu");
+                    break;
                 case "fighters":
                     SetActiveMenu("fightersMenu");
                     break;
@@ -55,7 +58,7 @@ namespace HemaTournamentWebSite
             // Ottieni una lista di tutti gli elementi `<li>` del menu
             List<HtmlGenericControl> menuItems = new List<HtmlGenericControl>
                 {
-                    //dashboardMenu,
+                    homeMenu,
                     datesMenu,
                     calendarMenu,
                     fightersMenu,
