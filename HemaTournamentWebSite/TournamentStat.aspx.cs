@@ -40,12 +40,6 @@ namespace HemaTournamentWebSite
 
             debug = ConfigurationManager.AppSettings["Debug"].ToString() == "true";
 
-            if (debug)
-            {
-                lblConnectionStatus.Text = testEngine.TestConmnection();
-                lblConnectionStatus.Visible = true;
-            }
-
             ParseUrlId();
 
             //LoadTournamentDropdownItems();
@@ -75,55 +69,20 @@ namespace HemaTournamentWebSite
                 // Fai qualcosa con idDiscipline
                 disciplineId = int.Parse(discipline);
 
-                if(disciplineId >  0)
-                    lblDiscipline.Text = disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
+                if (disciplineId > 0)
+                {
+                    lblDiscipline.Text = " - " + disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
+                    btnPoolsIndicators.Disabled = false;
+                }
             }
 
             if(tournamentId != 0 && disciplineId != 0)
             {
-                CreatePoolsTables();
+                CreateMatchesTables();
 
                 SetRanking();
             }
         }
-
-        //private void LoadTournamentDropdownItems()
-        //{
-        //    // Cancella eventuali elementi esistenti (necessario per evitare duplicati durante i postback)
-        //    dropdownTournamentMenu.Controls.Clear();
-
-        //    // Simulazione di dati recuperati dal database
-        //    var tournaments = hemaEngine.LoadTorunaments();
-
-        //    if (tournaments == null || tournaments.Count == 0)
-        //        return;
-
-        //    int tempKey = 0;
-        //    foreach (var tournament in tournaments)
-        //    {
-        //        // Creazione di un elemento <li>
-        //        HtmlGenericControl li = new HtmlGenericControl("li");
-
-        //        // Creazione del pulsante
-        //        Button button = new Button
-        //        {
-        //            Text = tournament.Name,
-        //            CssClass = "dropdown-item", // Stile Bootstrap
-        //            CommandArgument = tournament.Name, // Imposta un valore identificativo
-        //        };
-        //        button.Attributes.Add("data-value", tournament.Id.ToString());
-
-        //        button.Click += TournamentDropdownItem_Click; // Associa l'evento Click
-
-        //        // Aggiungi il pulsante all'elemento <li>
-        //        li.Controls.Add(button);
-
-        //        // Aggiungi l'elemento <li> alla lista <ul>
-        //        dropdownTournamentMenu.Controls.Add(li);
-
-        //        tempKey++;
-        //    }
-        //}
 
         private void LoadDisciplineDropdownItems()
         {
@@ -158,28 +117,6 @@ namespace HemaTournamentWebSite
             }
         }
 
-        //protected void TournamentDropdownItem_Click(object sender, EventArgs e)
-        //{
-        //    // Recupera il pulsante cliccato
-        //    Button clickedButton = sender as Button;
-        //    if (clickedButton != null)
-        //    {
-        //        string selectedTournament = clickedButton.CommandArgument;
-        //        string customValue = ((Button)sender).Attributes["data-value"];
-
-        //        // Logica per gestire l'elemento selezionato
-        //        System.Diagnostics.Debug.WriteLine($"Selected Tournament {selectedTournament} with id {customValue}");
-
-        //        idTournament = Convert.ToInt32(customValue);
-        //        lblIdTorneo.Text = customValue;
-        //        idTournament = Convert.ToInt32(lblIdTorneo.Text);
-
-        //        lblTournament.Text = selectedTournament;
-        //        idDiscipline = 0;
-        //        lblDiscipline.Text = "";
-        //    }
-        //}
-
         protected void DisciplineDropdownItem_Click(object sender, EventArgs e)
         {
             // Recupera il pulsante cliccato
@@ -193,7 +130,7 @@ namespace HemaTournamentWebSite
                 System.Diagnostics.Debug.WriteLine($"Selected discipline {selectedDicipline} with id {customValue}");
 
                 disciplineId = Convert.ToInt32(customValue);
-                lblDiscipline.Text = selectedDicipline;
+                lblDiscipline.Text = " - " + selectedDicipline;
 
                 Response.Redirect("TournamentStat.aspx?idTournament=" + tournamentId+"&idDiscipline="+ disciplineId);
 
@@ -201,14 +138,8 @@ namespace HemaTournamentWebSite
         }
 
 
-        private void CreatePoolsTables()
+        private void CreateMatchesTables()
         {
-            if (debug)
-            {
-                lblConnectionStatus.Text = "lblIdTorneo = "+ tournamentId + " IdDisciplina = " + disciplineId;
-                lblConnectionStatus.Visible = true;
-            }
-            
             if (tournamentId == 0 || disciplineId == 0)
                 return;
 

@@ -136,9 +136,13 @@
     <Content Include="assets\img\elements\TournamentCard\AssolutiFemminili2024.png" />
     <Content Include="assets\img\elements\TBA.jpg" />
     <Content Include="assets\img\elements\TBA.png" />
+    <Content Include="assets\img\elements\TournamentCard\AssolutiFemminili2025.jpg" />
     <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2024.png" />
+    <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2025.jpg" />
     <Content Include="assets\img\elements\TournamentCard\QualificazioneNordFemminile.png" />
     <Content Include="assets\img\elements\TournamentCard\QualificazioneNordMaschile.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneSudFemminile2025.jpg" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioniSudMaschile2025.jpg" />
     <Content Include="assets\img\favicon\favicon.ico" />
     <Content Include="assets\img\favicon\swords.ico" />
     <Content Include="assets\img\Clubs\generic_club.png">
