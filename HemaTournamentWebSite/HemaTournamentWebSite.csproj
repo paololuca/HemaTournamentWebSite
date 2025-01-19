@@ -136,13 +136,13 @@
     <Content Include="assets\img\elements\TournamentCard\AssolutiFemminili2024.png" />
     <Content Include="assets\img\elements\TBA.jpg" />
     <Content Include="assets\img\elements\TBA.png" />
-    <Content Include="assets\img\elements\TournamentCard\AssolutiFemminili2025.jpg" />
+    <Content Include="assets\img\elements\TournamentCard\AssolutiFemminili2025.png" />
     <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2024.png" />
-    <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2025.jpg" />
-    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordFemminile.png" />
-    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordMaschile.png" />
-    <Content Include="assets\img\elements\TournamentCard\QualificazioneSudFemminile2025.jpg" />
-    <Content Include="assets\img\elements\TournamentCard\QualificazioniSudMaschile2025.jpg" />
+    <Content Include="assets\img\elements\TournamentCard\AssolutiMaschili2025.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordFemminile2025.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneNordMaschile2025.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneSudFemminile2025.png" />
+    <Content Include="assets\img\elements\TournamentCard\QualificazioneSudMaschile2025.png" />
     <Content Include="assets\img\favicon\favicon.ico" />
     <Content Include="assets\img\favicon\swords.ico" />
     <Content Include="assets\img\Clubs\generic_club.png">
@@ -215,6 +215,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Archive.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Fighter.aspx" />
     <Content Include="Fighters.aspx" />
@@ -236,6 +237,7 @@
     <Content Include="assets\vendor\fonts\boxicons\boxicons.woff" />
     <Content Include="assets\vendor\fonts\boxicons\boxicons.woff2" />
     <Content Include="_oldMenu.aspx" />
+    <Content Include="Documents\Regolamento 2025.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -328,6 +330,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Archive.aspx.cs">
+      <DependentUpon>Archive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Archive.aspx.designer.cs">
+      <DependentUpon>Archive.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fighter.aspx.cs">
       <DependentUpon>Fighter.aspx</DependentUpon>

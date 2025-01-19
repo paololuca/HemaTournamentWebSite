@@ -16,7 +16,7 @@ namespace WebApplication2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var tournaments = hemaEngine.LoadTorunaments().OrderByDescending(t => t.EndDate);
+            var tournaments = hemaEngine.LoadTorunaments().OrderBy(t => t.EndDate);
 
             if (tournaments != null)
             {

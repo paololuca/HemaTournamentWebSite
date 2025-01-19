@@ -128,9 +128,15 @@
                                 <div class="text-truncate" data-i18n="Basic">Awards</div>
                             </a>
                         </li>--%>
-                        <!-- Tournaments -->
+                        <!-- Info -->
                         <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Info</span>
+                        </li>
+                        <li class="menu-item" id="documentsMenu" runat="server">
+                            <a href="Archive.aspx" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-note"></i>
+                                <div class="text-truncate" data-i18n="Basic">Documents</div>
+                            </a>
                         </li>
                         <li class="menu-item" id="aboutMenu" runat="server">
                             <a href="About.aspx" class="menu-link">

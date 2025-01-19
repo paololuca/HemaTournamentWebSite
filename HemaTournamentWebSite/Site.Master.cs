@@ -31,6 +31,9 @@ namespace HemaTournamentWebSite
                 case "about":
                     SetActiveMenu("aboutMenu");
                     break;
+                case "documents":
+                    SetActiveMenu("documentsMenu");
+                    break;
                 case "contact":
                     SetActiveMenu("contactUsMenu");
                     break;
@@ -45,9 +48,6 @@ namespace HemaTournamentWebSite
                     break;
                 case "clubs":
                     SetActiveMenu("clubsMenu");
-                    break;
-                case "awards":
-                    SetActiveMenu("awardsMenu");
                     break;
                     //clubsMenu, datesMenu
             }
@@ -65,7 +65,8 @@ namespace HemaTournamentWebSite
                     clubsMenu,
                     //awardsMenu,
                     aboutMenu,
-                    contactUsMenu
+                    contactUsMenu,
+                    documentsMenu
                 };
 
             // Itera su tutti gli elementi e aggiorna la classe

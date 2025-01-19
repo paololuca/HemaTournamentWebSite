@@ -9,7 +9,7 @@
 			<div class="col-md-5 order-2 order-md-1">
 				<div class="mt-5 mt-md-0">
 					<h2 class="display-5 fw-bold">About Us</h2>
-					<p class="lead">Welcome to the world of <strong>HEMA</strong> (Historical European Martial Arts), where history meets sport, and passion meets competition. For years, we have proudly represented the Italian HEMA community, offering a platform where athletes and enthusiasts can come together to celebrate this unique and captivating discipline.</p>
+					<p class="lead">For years, we have proudly represented one of the Italian HEMA community, offering a platform where athletes and enthusiasts can come together to celebrate this unique and captivating discipline.</p>
 					<p class="lead">Each year, <strong>hundreds of athletes</strong> and <strong>dozens of sports associations</strong> participate, making our circuit a cornerstone of the Italian HEMA community. We bring together competitors from diverse backgrounds who share the same passion: the art of historical fencing in a modern, athletic framework.
   </p></p>
 				</div>
