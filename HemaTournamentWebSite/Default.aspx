@@ -3,11 +3,14 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>
-            <%--<asp:Image ID="Image1" runat="server"  ImageUrl="~/assets/img/swords.png" width="5%"/>--%>
-            HEMA Chronicles</h1>
-        
+        <%--<h1>
+            <asp:Image ID="Image1" runat="server"  ImageUrl="~/assets/img/swords.png" width="5%"/>
+            HEMA Chronicles</h1>--%>
+        <img src="assets/img/elements/Banner/bnner.png" class="img-fluid" alt="">
+        <br />
+        <br />
         <p>
+
     Welcome to the world of <strong>HEMA</strong> (Historical European Martial Arts) Chronicles, where history meets sport, and passion meets competition.
   </p>
   <p>

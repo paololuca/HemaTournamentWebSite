@@ -21,7 +21,7 @@ namespace WebApplication2
             if (tournaments != null)
             {
                 AddCardsToActiveTournament(tournaments.Where(t => t.EndDate.AddDays(1) >= DateTime.Now).ToList());
-                AddCardsToClosedTournament(tournaments.Where(t => t.EndDate.AddDays(1) < DateTime.Now).ToList());
+                AddCardsToClosedTournament(tournaments.Where(t => t.EndDate.AddDays(1) < DateTime.Now).OrderByDescending(t => t.EndDate).ToList());
             }
         }
 

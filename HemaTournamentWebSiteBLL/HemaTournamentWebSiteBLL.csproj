@@ -32,9 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,12 +72,28 @@
     <Compile Include="DAL\Entity\Tournament.cs" />
     <Compile Include="DAL\SqlDal_Associations.cs" />
     <Compile Include="DAL\SqlDal_Fighters.cs" />
+    <Compile Include="DAL\SqlDal_FighterStatistics.cs" />
+    <Compile Include="DAL\SqlDal_HemaRatings.cs" />
+    <Compile Include="DAL\SqlDal_HemaSite.cs" />
+    <Compile Include="DAL\SqlDal_Pools.cs" />
+    <Compile Include="DAL\SqlDal_Report.cs" />
+    <Compile Include="DAL\SqlDal_Tournaments.cs" />
     <Compile Include="DAL\SqlPoolsStatstHema.cs" />
     <Compile Include="DAL\SqlPoolsMatchestHema.cs" />
     <Compile Include="DAL\SqlTestConnectionHema.cs" />
     <Compile Include="DAL\SqlTournamentHema.cs" />
+    <Compile Include="Helper\EncryptionHelper.cs" />
+    <Compile Include="Helper\Helper.cs" />
+    <Compile Include="Helper\MobileAppHelper.cs" />
+    <Compile Include="Helper\PathResolver.cs" />
+    <Compile Include="Manager\PhasesManager.cs" />
     <Compile Include="Manager\StatsKpiCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\OutputRisultatiEliminatorieTorneo.cs" />
+    <Compile Include="Report\OutputRisultatiTorneo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

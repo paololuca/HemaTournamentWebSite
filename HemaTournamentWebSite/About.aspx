@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="HemaTournamentWebSite.About" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+
+</asp:Content>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     / <a href="Default.aspx">Home</a>
 
@@ -17,16 +21,16 @@
 			<div class="col-md-6 offset-md-1 order-1 order-md-2">
 				<div class="row gx-2 gx-lg-3">
 					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About1.jpg"></div>
+						<div class="mb-2"><img class="img-fluid rounded-3" id="img1" runat="server" src="#"/></div>
 					</div>
 					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About2.jpg"></div>
+						<div class="mb-2"><img class="img-fluid rounded-3" id="img2" runat="server" src="#"/></div>
 					</div>
 					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About3.jpg"></div>
+						<div class="mb-2"><img class="img-fluid rounded-3" id="img3" runat="server" src="#"/></div>
 					</div>
 					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="assets/img/About/About4.jpg"></div>
+						<div class="mb-2"><img class="img-fluid rounded-3" id="img4" runat="server" src="#"/></div>
 					</div>
 				</div>
 			</div>

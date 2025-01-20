@@ -10,6 +10,9 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using HemaTournamentWebSiteBLL.Manager;
+using HemaTournamentWebSiteBLL.BusinessEntity.Entity;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Policy;
 
 namespace HemaTournamentWebSite
 {
@@ -78,10 +81,66 @@ namespace HemaTournamentWebSite
 
             if(tournamentId != 0 && disciplineId != 0)
             {
+                CreatePoolsList();
                 CreateMatchesTables();
 
                 SetRanking();
             }
+        }
+
+        private void CreatePoolsList()
+        {
+            var numeroGironi = SqlDal_Pools.GetNumeroGironiByTorneoDisciplina(tournamentId, disciplineId);
+
+            if(numeroGironi != 0)
+            {
+                var gironi = new List<List<AtletaEntity>>();
+                gironi = SqlDal_Pools.GetGironiSalvati(tournamentId, disciplineId);
+
+                var numeroAtletiTorneoDisciplina = gironi.SelectMany(list => list).Distinct().Count();
+
+                var gironiIncontri = new List<List<MatchEntity>>();
+
+                var poolIndex = 1;
+
+                foreach (List<AtletaEntity> poolList in gironi)
+                {
+
+                    // Crea il div della card
+                    var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                    cardDiv.Attributes["class"] = "card";
+
+                    // Crea l'header della card
+                    var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+                    cardHeader.Attributes["class"] = "card-header";
+                    cardHeader.InnerText = "Pool " + (poolIndex);
+                    cardDiv.Controls.Add(cardHeader);
+
+                    // Crea il div per la tabella
+                    var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                    tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+                    // Crea la tabella
+                    Table table = GeneratePoolTable("Pool " + poolIndex, poolList); // Metodo esistente per generare la tabella
+                    tableDiv.Controls.Add(table);
+
+                    // Aggiungi il div della tabella alla card
+                    cardDiv.Controls.Add(tableDiv);
+
+                    // Aggiungi un HR sotto la card
+                    var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+                    hr.Attributes["class"] = "my-12";
+
+                    // Aggiungi tutto al div principale
+                    var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+                    divPoolsList.Controls.Add(cardDiv);
+                    divPoolsList.Controls.Add(hr);
+
+                    poolIndex++;
+
+                }
+            }
+
         }
 
         private void LoadDisciplineDropdownItems()
@@ -137,6 +196,45 @@ namespace HemaTournamentWebSite
             }
         }
 
+        private Table GeneratePoolTable(string poolTitle, List<AtletaEntity> poolList)
+        {
+            Table table = new Table();
+            table.CssClass = "table table-hover table-striped";
+
+            // Crea l'intestazione della tabella con allineamento personalizzato
+            TableHeaderRow headerRow = new TableHeaderRow();
+            headerRow.CssClass = "table-dark";
+            TableHeaderCell redFighterHeader = new TableHeaderCell { Text = "Name", Width = Unit.Percentage(40) };
+            redFighterHeader.CssClass = "text-start"; // Allinea l'intestazione a sinistra
+            headerRow.Cells.Add(redFighterHeader);
+
+            TableHeaderCell pointHeader = new TableHeaderCell { Text = "Club", Width = Unit.Percentage(60) };
+            pointHeader.CssClass = "text-start"; // Centra l'intestazione
+            headerRow.Cells.Add(pointHeader);
+
+            table.Rows.Add(headerRow);
+
+            // Aggiungi alcune righe alla tabella (come prima)
+            foreach (var p in poolList)
+            {
+                TableRow row = new TableRow();
+
+                // Colonna allineata a sinistra
+                TableCell nameCell = new TableCell { Text = p.FullName };
+
+                nameCell.CssClass = "text-start";
+                row.Cells.Add(nameCell);
+
+                // Colonna allineata al centro
+                TableCell clubCell = new TableCell { Text = p.Asd };
+                clubCell.CssClass = "text-start";
+                row.Cells.Add(clubCell);
+
+                table.Rows.Add(row);
+            }
+
+            return table;
+        }
 
         private void CreateMatchesTables()
         {
@@ -172,7 +270,7 @@ namespace HemaTournamentWebSite
                 tableDiv.Attributes["class"] = "table-responsive text-nowrap";
 
                 // Crea la tabella
-                Table table = GenerateTable("Pool " + i, pool); // Metodo esistente per generare la tabella
+                Table table = GenerateMatchTable("Pool " + i, pool); // Metodo esistente per generare la tabella
                 tableDiv.Controls.Add(table);
 
                 // Aggiungi il div della tabella alla card
@@ -191,7 +289,7 @@ namespace HemaTournamentWebSite
         }
 
         // Funzione che genera la tabella dinamica
-        private Table GenerateTable(string poolName, List<Matches> pool)
+        private Table GenerateMatchTable(string poolName, List<Matches> pool)
         {
             Table table = new Table();
             table.CssClass = "table table-hover";

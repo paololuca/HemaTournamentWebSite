@@ -249,7 +249,9 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane fade show activ" id="navs-pills-justified-pools" role="tabpanel">
+                    <div class="tab-pane fade show active" id="navs-pills-justified-pools" role="tabpanel">
+                        <div class="text-nowrap" id="divPoolsList" runat="server">
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="navs-pills-justified-matches" role="tabpanel">
                         <div class="text-nowrap" id="div1" runat="server">
