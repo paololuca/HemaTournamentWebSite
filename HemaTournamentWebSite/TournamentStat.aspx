@@ -24,8 +24,8 @@
         
         <div class="col-lg-3 col-md-6">
             <div class="mt-4">
-                                        <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
-<ul class="dropdown-menu" runat="server" id="dropdownDisciplineMenu"></ul>
+                <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
+                <ul class="dropdown-menu" runat="server" id="dropdownDisciplineMenu"></ul>
                 <button
                     class="btn btn-icon btn-primary"
                     type="button"
@@ -329,16 +329,7 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="navs-pills-justified-16th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div16th" runat="server">
-                                    <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>
-                                    <div class="mt-6">
-                                        <img
-                                            src="../assets/img/illustrations/girl-doing-yoga-light.png"
-                                            alt="girl-doing-yoga-light"
-                                            width="500"
-                                            class="img-fluid"
-                                            data-app-light-img="illustrations/girl-doing-yoga-light.png"
-                                            data-app-dark-img="illustrations/girl-doing-yoga-dark.png" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-8th" role="tabpanel">

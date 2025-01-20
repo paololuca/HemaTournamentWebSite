@@ -13,6 +13,7 @@ using HemaTournamentWebSiteBLL.Manager;
 using HemaTournamentWebSiteBLL.BusinessEntity.Entity;
 using System.Runtime.Remoting.Messaging;
 using System.Security.Policy;
+using HemaTournamentWebSiteBLL.BusinessEntity.DAO;
 
 namespace HemaTournamentWebSite
 {
@@ -82,65 +83,10 @@ namespace HemaTournamentWebSite
             if(tournamentId != 0 && disciplineId != 0)
             {
                 CreatePoolsList();
-                CreateMatchesTables();
-
+                CreateMatchesList();
                 SetRanking();
+                SetFinalPhases();
             }
-        }
-
-        private void CreatePoolsList()
-        {
-            var numeroGironi = SqlDal_Pools.GetNumeroGironiByTorneoDisciplina(tournamentId, disciplineId);
-
-            if(numeroGironi != 0)
-            {
-                var gironi = new List<List<AtletaEntity>>();
-                gironi = SqlDal_Pools.GetGironiSalvati(tournamentId, disciplineId);
-
-                var numeroAtletiTorneoDisciplina = gironi.SelectMany(list => list).Distinct().Count();
-
-                var gironiIncontri = new List<List<MatchEntity>>();
-
-                var poolIndex = 1;
-
-                foreach (List<AtletaEntity> poolList in gironi)
-                {
-
-                    // Crea il div della card
-                    var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
-                    cardDiv.Attributes["class"] = "card";
-
-                    // Crea l'header della card
-                    var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
-                    cardHeader.Attributes["class"] = "card-header";
-                    cardHeader.InnerText = "Pool " + (poolIndex);
-                    cardDiv.Controls.Add(cardHeader);
-
-                    // Crea il div per la tabella
-                    var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
-                    tableDiv.Attributes["class"] = "table-responsive text-nowrap";
-
-                    // Crea la tabella
-                    Table table = GeneratePoolTable("Pool " + poolIndex, poolList); // Metodo esistente per generare la tabella
-                    tableDiv.Controls.Add(table);
-
-                    // Aggiungi il div della tabella alla card
-                    cardDiv.Controls.Add(tableDiv);
-
-                    // Aggiungi un HR sotto la card
-                    var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
-                    hr.Attributes["class"] = "my-12";
-
-                    // Aggiungi tutto al div principale
-                    var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
-                    divPoolsList.Controls.Add(cardDiv);
-                    divPoolsList.Controls.Add(hr);
-
-                    poolIndex++;
-
-                }
-            }
-
         }
 
         private void LoadDisciplineDropdownItems()
@@ -175,7 +121,6 @@ namespace HemaTournamentWebSite
                 tempKey++;
             }
         }
-
         protected void DisciplineDropdownItem_Click(object sender, EventArgs e)
         {
             // Recupera il pulsante cliccato
@@ -195,8 +140,61 @@ namespace HemaTournamentWebSite
 
             }
         }
+        private void CreatePoolsList()
+        {
+            var numeroGironi = SqlDal_Pools.GetNumeroGironiByTorneoDisciplina(tournamentId, disciplineId);
 
-        private Table GeneratePoolTable(string poolTitle, List<AtletaEntity> poolList)
+            if (numeroGironi != 0)
+            {
+                var gironi = new List<List<AtletaEntity>>();
+                gironi = SqlDal_Pools.GetGironiSalvati(tournamentId, disciplineId);
+
+                var numeroAtletiTorneoDisciplina = gironi.SelectMany(list => list).Distinct().Count();
+
+                var gironiIncontri = new List<List<MatchEntity>>();
+
+                var poolIndex = 1;
+
+                foreach (List<AtletaEntity> poolList in gironi)
+                {
+
+                    // Crea il div della card
+                    var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                    cardDiv.Attributes["class"] = "card";
+
+                    // Crea l'header della card
+                    var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+                    cardHeader.Attributes["class"] = "card-header";
+                    cardHeader.InnerText = "Pool " + (poolIndex);
+                    cardDiv.Controls.Add(cardHeader);
+
+                    // Crea il div per la tabella
+                    var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+                    tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+                    // Crea la tabella
+                    Table table = PoolTable("Pool " + poolIndex, poolList); // Metodo esistente per generare la tabella
+                    tableDiv.Controls.Add(table);
+
+                    // Aggiungi il div della tabella alla card
+                    cardDiv.Controls.Add(tableDiv);
+
+                    // Aggiungi un HR sotto la card
+                    var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+                    hr.Attributes["class"] = "my-12";
+
+                    // Aggiungi tutto al div principale
+                    var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+                    divPoolsList.Controls.Add(cardDiv);
+                    divPoolsList.Controls.Add(hr);
+
+                    poolIndex++;
+
+                }
+            }
+
+        }
+        private Table PoolTable(string poolTitle, List<AtletaEntity> poolList)
         {
             Table table = new Table();
             table.CssClass = "table table-hover table-striped";
@@ -235,8 +233,7 @@ namespace HemaTournamentWebSite
 
             return table;
         }
-
-        private void CreateMatchesTables()
+        private void CreateMatchesList()
         {
             if (tournamentId == 0 || disciplineId == 0)
                 return;
@@ -270,7 +267,7 @@ namespace HemaTournamentWebSite
                 tableDiv.Attributes["class"] = "table-responsive text-nowrap";
 
                 // Crea la tabella
-                Table table = GenerateMatchTable("Pool " + i, pool); // Metodo esistente per generare la tabella
+                Table table = MatchTable("Pool " + i, pool); // Metodo esistente per generare la tabella
                 tableDiv.Controls.Add(table);
 
                 // Aggiungi il div della tabella alla card
@@ -287,9 +284,8 @@ namespace HemaTournamentWebSite
 
             }
         }
-
         // Funzione che genera la tabella dinamica
-        private Table GenerateMatchTable(string poolName, List<Matches> pool)
+        private Table MatchTable(string poolName, List<Matches> pool)
         {
             Table table = new Table();
             table.CssClass = "table table-hover";
@@ -365,7 +361,6 @@ namespace HemaTournamentWebSite
             return table;
 
         }
-
         private void SetRanking()
         {
             if (disciplineId == 0 || tournamentId == 0)
@@ -433,7 +428,6 @@ namespace HemaTournamentWebSite
 
             SetStats(stats, countDeltaNotZero, atletiAmmessiEliminatorie);
         }
-
         private void SetStats(List<Stats> stats, int countDeltaNotZero, int atletiAmmessiEliminatorie)
         {
             if(stats != null && stats.Count > 0)
@@ -453,12 +447,239 @@ namespace HemaTournamentWebSite
                 
             }
         }
-
         private static void SetPointColour(bool doubleDeath, int pointA, int pointB, TableCell pointCell)
         {
             pointCell.BackColor = doubleDeath ? System.Drawing.Color.LightPink :
                 pointA == pointB ? System.Drawing.Color.LightGray :
                 pointA > pointB ? System.Drawing.Color.LightGreen : System.Drawing.Color.LightGray;
+        }
+
+        private void SetFinalPhases()
+        {
+            Set16th();
+        }
+
+        private void Set16th()
+        {
+            List<AtletaEliminatorie> allAtleti = SqlDal_Pools.GetSedicesimi(tournamentId, disciplineId);
+
+            GetFirstBranch16th(allAtleti);
+            GetSecondBranch16th(allAtleti);
+            GetThirdBranch16th(allAtleti);
+            GetFourthBranch16th(allAtleti);
+
+        }
+
+        private void GetFirstBranch16th(List<AtletaEliminatorie> allAtleti)
+        {
+            // Crea il div della card
+            var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            cardDiv.Attributes["class"] = "card";
+
+            // Crea l'header della card
+            var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+            cardHeader.Attributes["class"] = "card-header";
+            cardHeader.InnerText = "Branch 1";
+            cardDiv.Controls.Add(cardHeader);
+
+            // Crea il div per la tabella
+            var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+            // Crea la tabella
+            Table table1 = BranchTable(allAtleti.ElementAt(0), allAtleti.ElementAt(31)); 
+            Table table2 = BranchTable(allAtleti.ElementAt(15), allAtleti.ElementAt(16)); 
+            Table table3 = BranchTable(allAtleti.ElementAt(8), allAtleti.ElementAt(23)); 
+            Table table4 = BranchTable(allAtleti.ElementAt(7), allAtleti.ElementAt(24)); 
+            
+            tableDiv.Controls.Add(table1);
+            tableDiv.Controls.Add(table2);
+            tableDiv.Controls.Add(table3);
+            tableDiv.Controls.Add(table4);
+
+            // Aggiungi il div della tabella alla card
+            cardDiv.Controls.Add(tableDiv);
+
+            // Aggiungi un HR sotto la card
+            var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+            hr.Attributes["class"] = "my-12";
+
+            // Aggiungi tutto al div principale
+            var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            div16th.Controls.Add(cardDiv);
+            div16th.Controls.Add(hr);
+        }
+
+        private void GetSecondBranch16th(List<AtletaEliminatorie> allAtleti)
+        {
+            // Crea il div della card
+            var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            cardDiv.Attributes["class"] = "card";
+
+            // Crea l'header della card
+            var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+            cardHeader.Attributes["class"] = "card-header";
+            cardHeader.InnerText = "Branch 1";
+            cardDiv.Controls.Add(cardHeader);
+
+            // Crea il div per la tabella
+            var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+            // Crea la tabella
+            Table table1 = BranchTable(allAtleti.ElementAt(1), allAtleti.ElementAt(30));
+            Table table2 = BranchTable(allAtleti.ElementAt(14), allAtleti.ElementAt(17));
+            Table table3 = BranchTable(allAtleti.ElementAt(9), allAtleti.ElementAt(22));
+            Table table4 = BranchTable(allAtleti.ElementAt(6), allAtleti.ElementAt(25));
+
+            tableDiv.Controls.Add(table1);
+            tableDiv.Controls.Add(table2);
+            tableDiv.Controls.Add(table3);
+            tableDiv.Controls.Add(table4);
+
+            // Aggiungi il div della tabella alla card
+            cardDiv.Controls.Add(tableDiv);
+
+            // Aggiungi un HR sotto la card
+            var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+            hr.Attributes["class"] = "my-12";
+
+            // Aggiungi tutto al div principale
+            var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            div16th.Controls.Add(cardDiv);
+            div16th.Controls.Add(hr);
+        }
+
+        private void GetThirdBranch16th(List<AtletaEliminatorie> allAtleti)
+        {
+            // Crea il div della card
+            var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            cardDiv.Attributes["class"] = "card";
+
+            // Crea l'header della card
+            var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+            cardHeader.Attributes["class"] = "card-header";
+            cardHeader.InnerText = "Branch 1";
+            cardDiv.Controls.Add(cardHeader);
+
+            // Crea il div per la tabella
+            var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+            // Crea la tabella
+            Table table1 = BranchTable(allAtleti.ElementAt(5), allAtleti.ElementAt(26));
+            Table table2 = BranchTable(allAtleti.ElementAt(10), allAtleti.ElementAt(21));
+            Table table3 = BranchTable(allAtleti.ElementAt(13), allAtleti.ElementAt(18));
+            Table table4 = BranchTable(allAtleti.ElementAt(2), allAtleti.ElementAt(29));
+
+            tableDiv.Controls.Add(table1);
+            tableDiv.Controls.Add(table2);
+            tableDiv.Controls.Add(table3);
+            tableDiv.Controls.Add(table4);
+
+            // Aggiungi il div della tabella alla card
+            cardDiv.Controls.Add(tableDiv);
+
+            // Aggiungi un HR sotto la card
+            var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+            hr.Attributes["class"] = "my-12";
+
+            // Aggiungi tutto al div principale
+            var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            div16th.Controls.Add(cardDiv);
+            div16th.Controls.Add(hr);
+        }
+
+        private void GetFourthBranch16th(List<AtletaEliminatorie> allAtleti)
+        {
+            // Crea il div della card
+            var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            cardDiv.Attributes["class"] = "card";
+
+            // Crea l'header della card
+            var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
+            cardHeader.Attributes["class"] = "card-header";
+            cardHeader.InnerText = "Branch 1";
+            cardDiv.Controls.Add(cardHeader);
+
+            // Crea il div per la tabella
+            var tableDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
+            tableDiv.Attributes["class"] = "table-responsive text-nowrap";
+
+            // Crea la tabella
+            Table table1 = BranchTable(allAtleti.ElementAt(4), allAtleti.ElementAt(27));
+            Table table2 = BranchTable(allAtleti.ElementAt(11), allAtleti.ElementAt(20));
+            Table table3 = BranchTable(allAtleti.ElementAt(12), allAtleti.ElementAt(19));
+            Table table4 = BranchTable(allAtleti.ElementAt(3), allAtleti.ElementAt(28));
+
+            tableDiv.Controls.Add(table1);
+            tableDiv.Controls.Add(table2);
+            tableDiv.Controls.Add(table3);
+            tableDiv.Controls.Add(table4);
+
+            // Aggiungi il div della tabella alla card
+            cardDiv.Controls.Add(tableDiv);
+
+            // Aggiungi un HR sotto la card
+            var hr = new System.Web.UI.HtmlControls.HtmlGenericControl("hr");
+            hr.Attributes["class"] = "my-12";
+
+            // Aggiungi tutto al div principale
+            var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            div16th.Controls.Add(cardDiv);
+            div16th.Controls.Add(hr);
+        }
+
+        private Table BranchTable(AtletaEliminatorie atletaEliminatorie1, AtletaEliminatorie atletaEliminatorie2)
+        {
+            Table table = new Table();
+            table.CssClass = "table table-hover";
+
+            // Crea l'intestazione della tabella con allineamento personalizzato
+            TableHeaderRow headerRow = new TableHeaderRow();
+            headerRow.CssClass = "table-dark";
+            TableHeaderCell redFighterHeader = new TableHeaderCell { Text = "Fighter" };
+            redFighterHeader.CssClass = "text-start"; // Allinea l'intestazione a sinistra
+            headerRow.Cells.Add(redFighterHeader);
+
+            TableHeaderCell pointHeader = new TableHeaderCell { Text = "Hit" };
+            pointHeader.CssClass = "text-center"; // Centra l'intestazione
+            headerRow.Cells.Add(pointHeader);
+
+            table.Rows.Add(headerRow);
+
+            
+                TableRow row = new TableRow();
+
+
+                TableCell fighter1 = new TableCell { Text = $"{atletaEliminatorie1.Cognome} {atletaEliminatorie1.Nome}" };
+
+                fighter1.CssClass = "text-start";
+                row.Cells.Add(fighter1);
+
+                // Colonna allineata al centro
+                TableCell pointCell = new TableCell { Text = atletaEliminatorie1.PuntiFatti.ToString() };
+                pointCell.CssClass = "text-center";
+                SetPointColour(false, atletaEliminatorie1.PuntiFatti, atletaEliminatorie2.PuntiFatti, pointCell);
+                row.Cells.Add(pointCell);
+            
+                table.Rows.Add(row);
+                row = new TableRow();
+
+                TableCell fighter2 = new TableCell { Text = $"{atletaEliminatorie2.Cognome} {atletaEliminatorie2.Nome}" };
+
+            fighter1.CssClass = "text-start";
+            row.Cells.Add(fighter1);
+
+            // Colonna allineata al centro
+            TableCell pointCell2 = new TableCell { Text = atletaEliminatorie2.PuntiFatti.ToString() };
+            pointCell.CssClass = "text-center";
+            SetPointColour(false, atletaEliminatorie2.PuntiFatti, atletaEliminatorie1.PuntiFatti, pointCell);
+            row.Cells.Add(pointCell);
+
+            table.Rows.Add(row);
+
+            return table;
         }
     }
 }

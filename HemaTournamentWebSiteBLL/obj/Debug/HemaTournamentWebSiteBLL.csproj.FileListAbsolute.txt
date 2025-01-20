@@ -13,3 +13,6 @@ C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\o
 C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
 C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
+C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
