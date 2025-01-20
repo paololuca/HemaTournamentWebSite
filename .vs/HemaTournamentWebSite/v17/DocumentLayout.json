@@ -3,75 +3,99 @@
   "WorkspaceRootPath": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentstat.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentstat.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsite\\fighters.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighters.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentstat.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentstat.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\fighters.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighters.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\club.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\club.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\clubs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\clubs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\calendar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\calendar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\clubs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\clubs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\club.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\club.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\club.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\club.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\fighter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentstat.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentstat.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_pools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_pools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentstat.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentstat.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\clubs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\clubs.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentdates.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentdates.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_tournaments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_tournaments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_tournaments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_hemasite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_hemasite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_hemasite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_hemaratings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_hemaratings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_hemaratings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\dal\\sqldal_fighterstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_fighterstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_fighterstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\helper\\mobileapphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\helper\\mobileapphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\helper\\mobileapphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\helper\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\helper\\pathresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\helper\\pathresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\helper\\pathresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsitebll\\manager\\phasesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\manager\\phasesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\manager\\phasesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -87,23 +111,15 @@
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqlpoolsmatchesthema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\dal\\sqldal_fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\dal\\sqldal_fighters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\businessentity\\entitydao\\rankingbyyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|solutionrelative:hematournamentwebsitebll\\businessentity\\entitydao\\rankingbyyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\fighters.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighters.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsite\\about.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\about.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\about.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -111,16 +127,12 @@
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\archive.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsite\\archive.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\archive.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\archive.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|c:\\users\\paololuca\\documents\\source\\github\\hematournamentwebsite\\hematournamentwebsite\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\tournamentdates.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\tournamentdates.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\calendar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\calendar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\calendar.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\fighter.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighter.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsite\\fighter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BC8379DB-A4BE-4BDF-8804-D8412D03FCD5}|HemaTournamentWebSite\\HemaTournamentWebSite.csproj|solutionrelative:hematournamentwebsite\\fighter.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13EBCEC8-5C68-4E5D-BE77-E1106FB832DB}|HemaTournamentWebSiteBLL\\HemaTournamentWebSiteBLL.csproj|C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\hematournamentwebsitebll\\businessentity\\entity\\asdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -246,11 +250,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "TournamentStat.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\TournamentStat.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\TournamentStat.aspx",
@@ -264,13 +268,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "TournamentStat.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\TournamentStat.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\TournamentStat.aspx.cs",
               "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\TournamentStat.aspx.cs",
               "RelativeToolTip": "HemaTournamentWebSite\\TournamentStat.aspx.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAAwFwAAAAMAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAA9wGEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T10:03:54.628Z",
               "IsPinned": true,
@@ -278,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 7,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Site.Master",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Site.Master",
@@ -292,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Site.Master.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Site.Master.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Site.Master.cs",
@@ -305,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "TournamentDates.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\TournamentDates.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\TournamentDates.aspx.cs",
@@ -314,12 +318,11 @@
               "ViewState": "AQIAAAoAAAAAAAAAAAAYwBcAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T15:04:04.289Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "TournamentDates.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\TournamentDates.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\TournamentDates.aspx",
@@ -333,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Clubs.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Clubs.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Clubs.aspx",
@@ -347,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Clubs.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Clubs.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Clubs.aspx.cs",
@@ -356,8 +359,7 @@
               "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T14:29:59.914Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -375,13 +377,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Club.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Club.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Club.aspx.cs",
               "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Club.aspx.cs",
               "RelativeToolTip": "HemaTournamentWebSite\\Club.aspx.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowDsAAACiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T16:40:23.577Z",
               "IsPinned": true,
@@ -389,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 8,
               "Title": "Fighter.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Fighter.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Fighter.aspx",
@@ -398,11 +400,12 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-01-17T14:39:00.274Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Contact.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Contact.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Contact.aspx",
@@ -411,11 +414,12 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-01-08T10:42:50.876Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Archive.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Archive.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Archive.aspx",
@@ -429,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "About.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\About.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\About.aspx",
@@ -443,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "About.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\About.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\About.aspx.cs",
@@ -452,12 +456,11 @@
               "ViewState": "AQIAABwAAAAAAAAAAAAYwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T11:08:45.421Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
               "Title": "Fighters.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Fighters.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Fighters.aspx",
@@ -471,7 +474,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "Fighters.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Fighters.aspx.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSite\\Fighters.aspx.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Fighters.aspx.cs",
+              "RelativeToolTip": "HemaTournamentWebSite\\Fighters.aspx.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:08:03.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "SqlDal_HemaRatings.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_HemaRatings.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_HemaRatings.cs",
@@ -480,51 +497,11 @@
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwCIAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T13:27:28.823Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PhasesManager.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAgAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:35:26.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PathResolver.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:35:05.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MobileAppHelper.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAwwCQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:34:56.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Helper.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\Helper.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\Helper.cs",
@@ -532,12 +509,11 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\Helper.cs",
               "ViewState": "AQIAANUAAAAAAAAAAAAAANoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:34:53.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:34:53.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "EncryptionHelper.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\EncryptionHelper.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\EncryptionHelper.cs",
@@ -545,12 +521,11 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\EncryptionHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:34:42.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:34:42.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "SqlDal_Report.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Report.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Report.cs",
@@ -558,25 +533,36 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Report.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:27:53.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:27:53.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "SqlDal_Pools.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Pools.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Pools.cs",
               "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Pools.cs",
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Pools.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAYwDcAAAAMAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAEwEUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T13:27:45.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
+              "Title": "PhasesManager.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Manager\\PhasesManager.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T13:35:26.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "SqlDal_HemaSite.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_HemaSite.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_HemaSite.cs",
@@ -584,12 +570,11 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_HemaSite.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:27:31.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:27:31.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "SqlDal_FighterStatistics.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_FighterStatistics.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_FighterStatistics.cs",
@@ -597,12 +582,11 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_FighterStatistics.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAwwA0AAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:27:17.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:27:17.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "SqlDal_Tournaments.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Tournaments.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Tournaments.cs",
@@ -610,125 +594,24 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Tournaments.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:27:57.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:27:57.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SqlPoolsMatchestHema.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:50:31.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SqlDal_Associations.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowA4AAAB4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T14:08:09.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PhasesType.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:48:41.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Default.aspx",
-              "RelativeDocumentMoniker": "HemaTournamentWebSite\\Default.aspx",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Default.aspx",
-              "RelativeToolTip": "HemaTournamentWebSite\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-01-08T10:04:08.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ProfileManager.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:48:44.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "RisultatiIncontriGironi.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:48:36.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Web.config",
-              "RelativeDocumentMoniker": "HemaTournamentWebSite\\Web.config",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Web.config",
-              "RelativeToolTip": "HemaTournamentWebSite\\Web.config",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-08T10:05:46.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "SqlPoolsStatstHema.cs",
-              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
-              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
-              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
-              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:51:39.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "SqlDal_Fighters.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Fighters.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Fighters.cs",
               "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Fighters.cs",
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Fighters.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAA4wNIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T16:52:15.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 2,
               "Title": "Calendar.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Calendar.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Calendar.aspx",
@@ -741,7 +624,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 19,
+              "Title": "MobileAppHelper.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\MobileAppHelper.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwCQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T13:34:56.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PathResolver.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\Helper\\PathResolver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T13:35:05.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SqlPoolsMatchestHema.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsMatchestHema.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:50:31.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SqlDal_Associations.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlDal_Associations.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowA4AAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:08:09.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PhasesType.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\PhasesType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:48:41.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Default.aspx",
+              "RelativeDocumentMoniker": "HemaTournamentWebSite\\Default.aspx",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Default.aspx",
+              "RelativeToolTip": "HemaTournamentWebSite\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-08T10:04:08.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProfileManager.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:48:44.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RisultatiIncontriGironi.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RisultatiIncontriGironi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:48:36.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Web.config",
+              "RelativeDocumentMoniker": "HemaTournamentWebSite\\Web.config",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Web.config",
+              "RelativeToolTip": "HemaTournamentWebSite\\Web.config",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-08T10:05:46.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SqlPoolsStatstHema.cs",
+              "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
+              "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
+              "ToolTip": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
+              "RelativeToolTip": "HemaTournamentWebSiteBLL\\DAL\\SqlPoolsStatstHema.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:51:39.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "Fighter.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Fighter.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Fighter.aspx.cs",
@@ -753,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "RankingByYear.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RankingByYear.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RankingByYear.cs",
@@ -761,12 +765,11 @@
               "RelativeToolTip": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\RankingByYear.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:48:34.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T13:48:34.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Calendar.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Calendar.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Calendar.aspx.cs",
@@ -778,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Archive.aspx.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Archive.aspx.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Archive.aspx.cs",
@@ -786,12 +789,11 @@
               "RelativeToolTip": "HemaTournamentWebSite\\Archive.aspx.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T10:09:02.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T10:09:02.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Awards.aspx",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSite\\Awards.aspx",
               "RelativeDocumentMoniker": "HemaTournamentWebSite\\Awards.aspx",
@@ -803,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "AsdEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\AsdEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\AsdEntity.cs",
@@ -815,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "ProfileType.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileType.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Type\\ProfileType.cs",
@@ -827,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "SqlTestConnectionHema.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\DAL\\SqlTestConnectionHema.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\DAL\\SqlTestConnectionHema.cs",
@@ -839,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "GironiConclusi.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\GironiConclusi.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\GironiConclusi.cs",
@@ -851,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "AtletaEliminatorie.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\AtletaEliminatorie.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\EntityDAO\\AtletaEliminatorie.cs",
@@ -863,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\UserEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\UserEntity.cs",
@@ -875,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "TorneoEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\TorneoEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\TorneoEntity.cs",
@@ -887,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "MobileAppEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MobileAppEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MobileAppEntity.cs",
@@ -899,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "MatchEntityPoolsMatches.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MatchEntityPoolsMatches.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MatchEntityPoolsMatches.cs",
@@ -911,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "LoginUser.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\LoginUser.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\LoginUser.cs",
@@ -923,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "HemaRatingsMatchResult.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsMatchResult.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsMatchResult.cs",
@@ -935,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "HemaRatingsFighterMatchEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsFighterMatchEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsFighterMatchEntity.cs",
@@ -947,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "HemaRatingsFighterEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsFighterEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsFighterEntity.cs",
@@ -959,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "HemaRatingsClubEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsClubEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\HemaRatingsClubEntity.cs",
@@ -971,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "MatchEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MatchEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\MatchEntity.cs",
@@ -983,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "DisciplinaEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\DisciplinaEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\DisciplinaEntity.cs",
@@ -995,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "AtletaEntity.cs",
               "DocumentMoniker": "C:\\Users\\PaoloLuca\\Documents\\source\\GitHub\\HemaTournamentWebSite\\HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\AtletaEntity.cs",
               "RelativeDocumentMoniker": "HemaTournamentWebSiteBLL\\BusinessEntity\\Entity\\AtletaEntity.cs",

@@ -207,7 +207,8 @@ namespace HemaTournamentWebSiteBLL.DAL
                         IdAtleta = Convert.ToInt32(reader["Id"]),
                         Asd = Convert.ToString(reader["Nome_ASD"]),
                         Sesso = Convert.ToString(reader["Sesso"]),
-                        Email = Convert.ToString(reader["Email"])
+                        Email = Convert.ToString(reader["Email"]),
+                        IsEnabled = Convert.ToBoolean(reader["IsEnabled"])
                     });
                 }
                 if (atleti.Count > 0)
