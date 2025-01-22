@@ -321,7 +321,7 @@
                                         data-bs-target="#navs-pills-justified-finalResult"
                                         aria-controls="navs-pills-justified-finalResult"
                                         aria-selected="true">
-                                        <span class="d-none d-sm-block"><i class="tf-icons bx bx-bar-chart bx-sm me-1_5 align-text-bottom"></i>Final</span><i class="bx bx-home bx-sm d-sm-none"></i>
+                                        <span class="d-none d-sm-block"><i class="tf-icons bx bx-bar-chart bx-sm me-1_5 align-text-bottom"></i>Final</span><i class="bx bx-bar-chart bx-sm d-sm-none"></i>
                                     </button>
                                 </li>
                             </ul>
@@ -334,58 +334,22 @@
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-8th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div8th" runat="server">
-                                    <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>
-                                    <div class="mt-6">
-                                        <img
-                                            src="../assets/img/illustrations/girl-doing-yoga-light.png"
-                                            alt="girl-doing-yoga-light"
-                                            width="500"
-                                            class="img-fluid"
-                                            data-app-light-img="illustrations/girl-doing-yoga-light.png"
-                                            data-app-dark-img="illustrations/girl-doing-yoga-dark.png" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-4th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div4th" runat="server">
-                                    <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>
-                                    <div class="mt-6">
-                                        <img
-                                            src="../assets/img/illustrations/girl-doing-yoga-light.png"
-                                            alt="girl-doing-yoga-light"
-                                            width="500"
-                                            class="img-fluid"
-                                            data-app-light-img="illustrations/girl-doing-yoga-light.png"
-                                            data-app-dark-img="illustrations/girl-doing-yoga-dark.png" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-semifinal" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="divSemifinal" runat="server">
-                                    <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>
-                                    <div class="mt-6">
-                                        <img
-                                            src="../assets/img/illustrations/girl-doing-yoga-light.png"
-                                            alt="girl-doing-yoga-light"
-                                            width="500"
-                                            class="img-fluid"
-                                            data-app-light-img="illustrations/girl-doing-yoga-light.png"
-                                            data-app-dark-img="illustrations/girl-doing-yoga-dark.png" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-finalResult" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="divFinal" runat="server">
-                                    <h3 class="mb-2 mx-2">Under Maintenance! 🚧</h3>
-                                    <div class="mt-6">
-                                        <img
-                                            src="../assets/img/illustrations/girl-doing-yoga-light.png"
-                                            alt="girl-doing-yoga-light"
-                                            width="500"
-                                            class="img-fluid"
-                                            data-app-light-img="illustrations/girl-doing-yoga-light.png"
-                                            data-app-dark-img="illustrations/girl-doing-yoga-dark.png" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

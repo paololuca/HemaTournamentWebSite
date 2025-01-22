@@ -17,7 +17,7 @@
     </asp:ContentPlaceHolder>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/swords.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +46,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <link href="~/swords.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/img/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -187,7 +187,7 @@
                                         <div class="container-xxl">
                                             <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
                                                 <div class="text-body">
-                                                    Beta Version 1.1.4 ©
+                                                    <b>Beta Version 2.0.0 ©</b>
                                                 <script>
                                                     document.write(new Date().getFullYear());
                                                 </script>

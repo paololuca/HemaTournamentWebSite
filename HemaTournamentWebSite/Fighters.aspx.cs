@@ -18,7 +18,7 @@ namespace WebApplication2
         private void LoadAllAssociates()
         {
             //
-            var fighters = SqlDal_Fighters.GetAllAnagraficaAtleti();
+            var fighters = SqlDal_Fighters.GetAllAnagraficaAtleti().OrderBy(a => a.Cognome).ToList();
 
 
             if (fighters.Count == 0)
@@ -31,8 +31,8 @@ namespace WebApplication2
             TableHeaderRow headerRow = new TableHeaderRow();
             headerRow.CssClass = "table-dark";
             //headerRow.Cells.Add(new TableHeaderCell { Text = "Active", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center", Width = Unit.Percentage(20) });
-            headerRow.Cells.Add(new TableHeaderCell { Text = "", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(2) });
-            headerRow.Cells.Add(new TableHeaderCell { Text = "", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(2) });
+            headerRow.Cells.Add(new TableHeaderCell { Text = "Profile", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(2) });
+            headerRow.Cells.Add(new TableHeaderCell { Text = "Club", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(2) });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Name", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-left", Width = Unit.Percentage(98) });
             
             

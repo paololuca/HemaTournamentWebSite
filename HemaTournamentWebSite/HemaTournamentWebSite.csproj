@@ -141,6 +141,7 @@
     <Content Include="assets\img\elements\TournamentCard\QualificazioneSudFemminile2025.png" />
     <Content Include="assets\img\elements\TournamentCard\QualificazioneSudMaschile2025.png" />
     <Content Include="assets\img\favicon\favicon.ico" />
+    <Content Include="assets\img\favicon\favicon_old.ico" />
     <Content Include="assets\img\favicon\swords.ico" />
     <Content Include="assets\img\Clubs\generic_club.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -169,6 +170,9 @@
     <Content Include="assets\img\layouts\layout-fluid-light.png" />
     <Content Include="assets\img\layouts\layout-without-menu-light.png" />
     <Content Include="assets\img\layouts\layout-without-navbar-light.png" />
+    <Content Include="assets\img\medals\bronze.png" />
+    <Content Include="assets\img\medals\gold.png" />
+    <Content Include="assets\img\medals\silver.png" />
     <Content Include="assets\img\swords.png" />
     <Content Include="assets\js\config.js" />
     <Content Include="assets\js\dashboards-analytics.js" />
