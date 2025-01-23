@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2
+namespace HemaTournamentWebSite
 {
 
 
-    public partial class Default
+    public partial class _Default
     {
     }
 }
