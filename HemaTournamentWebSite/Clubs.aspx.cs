@@ -1,5 +1,6 @@
 ﻿using HemaTournamentWebSiteBLL.BusinessEntity.Entity;
 using HemaTournamentWebSiteBLL.DAL;
+using HemaTournamentWebSiteBLL.Helper;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -76,7 +77,7 @@ namespace WebApplication2
             // Aggiunta immagine
             HtmlGenericControl img = new HtmlGenericControl("img");
             img.Attributes["class"] = "img-fluid";
-            img.Attributes["src"] = pathHrefClubsImages + GetImage(club.NomeAsd);
+            img.Attributes["src"] = pathHrefClubsImages + ClubImageHelper.GetImage(club.NomeAsd, absolutePath);
             img.Attributes["alt"] = "Card image cap";
 
             // Creazione del secondo card body
@@ -107,14 +108,5 @@ namespace WebApplication2
             return colDiv;
         }
 
-        private string GetImage(string nomeAsd)
-        {
-            var name = Regex.Replace(nomeAsd, @"[^a-zA-Z]", "");
-
-            if (File.Exists(absolutePath + name + ".png"))
-                return name + ".png";
-            else
-                return "generic_club.png";
-        }
     }
 }

@@ -113,9 +113,14 @@
     <Content Include="assets\img\About\About4.jpg" />
     <Content Include="assets\img\avatars\fencing.png" />
     <Content Include="assets\img\avatars\genderFencing.png" />
+    <Content Include="assets\img\Clubs\ArsHistoricaSSDaRL.png" />
+    <Content Include="assets\img\Clubs\OlympiaSchermaRomaASD.png" />
     <Content Include="assets\img\Clubs\SAAMBononia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="assets\img\Clubs\SAAMRomagna.png" />
+    <Content Include="assets\img\Clubs\SAAMTirrenica.png" />
+    <Content Include="assets\img\Clubs\SchermaStoricaVTAA.png" />
     <Content Include="assets\img\elements\1.jpg" />
     <Content Include="assets\img\elements\11.jpg" />
     <Content Include="assets\img\elements\12.jpg" />
@@ -222,8 +227,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Default2.aspx" />
     <Content Include="Archive.aspx" />
+    <Content Include="ErrorPages\404.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Fighter.aspx" />
     <Content Include="Fighters.aspx" />
@@ -246,6 +251,8 @@
     <Content Include="assets\vendor\fonts\boxicons\boxicons.woff2" />
     <Content Include="_oldMenu.aspx" />
     <Content Include="Documents\Regolamento 2025.pdf" />
+    <Content Include="Documents\Ranking\Ranking 20251601.pdf" />
+    <Content Include="Documents\Regolamento Campionato Scherma Storica ASC_2.03.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -339,19 +346,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default2.aspx.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default2.aspx.designer.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Archive.aspx.cs">
       <DependentUpon>Archive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Archive.aspx.designer.cs">
       <DependentUpon>Archive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fighter.aspx.cs">
       <DependentUpon>Fighter.aspx</DependentUpon>

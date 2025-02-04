@@ -67,6 +67,7 @@
     <Compile Include="BusinessEntity\Type\PhasesType.cs" />
     <Compile Include="BusinessEntity\Type\ProfileManager.cs" />
     <Compile Include="BusinessEntity\Type\ProfileType.cs" />
+    <Compile Include="Helper\ClubImageHelper.cs" />
     <Compile Include="DAL\Entity\Matches.cs" />
     <Compile Include="DAL\Entity\Stats.cs" />
     <Compile Include="DAL\Entity\Tournament.cs" />

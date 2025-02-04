@@ -132,6 +132,24 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.WebControls.Label lblBestWinLossRatio;
 
         /// <summary>
+        /// btnPoolsQualification control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnPoolsQualification;
+
+        /// <summary>
+        /// divRankingTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divRankingTable;
+
+        /// <summary>
         /// divPoolsList control.
         /// </summary>
         /// <remarks>
@@ -148,15 +166,6 @@ namespace HemaTournamentWebSite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div1;
-
-        /// <summary>
-        /// divRankingTable control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divRankingTable;
 
         /// <summary>
         /// div16th control.

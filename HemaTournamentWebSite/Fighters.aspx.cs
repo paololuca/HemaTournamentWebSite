@@ -46,7 +46,7 @@ namespace WebApplication2
             {
                 TableRow row = new TableRow();
 
-                TableCell profileCell = new TableCell { Text = $@"<a href = ""Fighter.aspx?idFighter={fighter.IdAtleta}"" class=""btn btn-icon item-edit""><i class=""icon-base bx bx-edit icon-sm""></i></a>" };
+                TableCell profileCell = new TableCell { Text = $@"<a href = ""Fighter.aspx?idFighter={fighter.IdAtleta}"" class=""btn btn-icon item-edit""><i class=""icon-base bx bxs-user-detail icon-sm""></i></a>" };
 
                 row.Cells.Add(profileCell);
 

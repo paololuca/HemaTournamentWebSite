@@ -14,17 +14,18 @@
     </div>--%>
 
     <%--<div class="btn-group" runat="server" id="btnDiscipline">--%>
-    
+
     <div class="row gy-3">
         <%--<div class="col-lg-3 col-md-6">
     <div class="mt-4">
         
     </div>
 </div>--%>
-        
+
         <div class="col-lg-3 col-md-6">
             <div class="mt-4">
-                <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server" />
+                <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" 
+                    aria-expanded="false" runat="server" />
                 <ul class="dropdown-menu" runat="server" id="dropdownDisciplineMenu"></ul>
                 <button
                     class="btn btn-icon btn-primary"
@@ -54,7 +55,6 @@
                             <div class="card-header">
                                 <div class="card-widget-separator-wrapper">
                                     <div class="card-body card-widget-separator">
-
                                         <div class="d-flex justify-content-between align-items-start card-widget-1 border-end pb-4 pb-sm-0">
                                             <div>
                                                 <p class="mb-1">Best Delta</p>
@@ -178,22 +178,44 @@
                                         </div>
                                     </div>
                                 </div>
-                        </div>
+                            </div>
 
-                    </div>     
-                    <button
-                        type="button"
-                        class="btn btn-primary d-grid w-100"
-                        data-bs-dismiss="offcanvas">
-                        Close
-                    </button>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn btn-primary d-grid w-100"
+                            data-bs-dismiss="offcanvas">
+                            Close
+                        </button>
+                    </div>
+
+
                 </div>
+                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#modalScrollable" id="btnPoolsQualification" runat="server"
+                    title="Pool's Qualification" disabled>
+                    <span class="tf-icons bx  bx-arrow-to-top bx-22px"></span>
+                </button>
+                <div class="modal fade" id="modalScrollable" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalScrollableTitle">Pool's Qualification</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive text-nowrap" id="divRankingTable" runat="server">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                        
 
             </div>
         </div>
-        
+
     </div>
     <div class="row my-6">
         <div class="col">
@@ -229,18 +251,6 @@
                             class="nav-link"
                             role="tab"
                             data-bs-toggle="tab"
-                            data-bs-target="#navs-pills-justified-qualification"
-                            aria-controls="navs-pills-justified-qualification"
-                            aria-selected="false">
-                            <span class="d-none d-sm-block"><i class="tf-icons bx bx-arrow-to-top bx-sm me-1_5 align-text-bottom"></i>Qualification</span><i class="bx bx-arrow-to-top bx-sm d-sm-none"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item mb-1 mb-sm-0">
-                        <button
-                            type="button"
-                            class="nav-link"
-                            role="tab"
-                            data-bs-toggle="tab"
                             data-bs-target="#navs-pills-justified-final"
                             aria-controls="navs-pills-justified-final"
                             aria-selected="false">
@@ -255,10 +265,6 @@
                     </div>
                     <div class="tab-pane fade" id="navs-pills-justified-matches" role="tabpanel">
                         <div class="text-nowrap" id="div1" runat="server">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="navs-pills-justified-qualification" role="tabpanel">
-                        <div class="table-responsive text-nowrap" id="divRankingTable" runat="server">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="navs-pills-justified-final" role="tabpanel">
@@ -329,32 +335,26 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="navs-pills-justified-16th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div16th" runat="server">
-                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-8th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div8th" runat="server">
-                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-4th" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="div4th" runat="server">
-                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-semifinal" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="divSemifinal" runat="server">
-                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="navs-pills-justified-finalResult" role="tabpanel">
                                 <div class="table-responsive text-nowrap" id="divFinal" runat="server">
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

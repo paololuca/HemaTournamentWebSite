@@ -23,7 +23,7 @@ namespace HemaTournamentWebSiteBLL.DAL
 
             try
             {
-                string commandText = "select * FROM [TOURNAMENT]";
+                string commandText = "select * FROM [TOURNAMENT] WHERE Show = 1";
                 c = new SqlConnection(_hemaConnectionString);
 
                 c.Open();

@@ -1,10 +1,12 @@
 ﻿using HemaTournamentWebSiteBLL.BusinessEntity.Entity;
 using HemaTournamentWebSiteBLL.DAL;
 using HemaTournamentWebSiteBLL.DAL.Entity;
+using HemaTournamentWebSiteBLL.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,8 +17,15 @@ namespace WebApplication2
     {
         int idClub;
         Random random;
+
+        string pathClubsImages = "~/assets/img/Clubs/";
+        string pathHrefClubsImages = "../../assets/img/Clubs/";
+        private string absolutePath;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            absolutePath = Server.MapPath(pathClubsImages);
+
             try
             {
                 idClub = Convert.ToInt32(Request.QueryString["idClub"]);
@@ -26,9 +35,7 @@ namespace WebApplication2
             random = new Random();
 
             if (idClub != 0)
-            {
                 SetAssociatesList(idClub);
-            }
             else
                 Response.Redirect("Clubs.aspx");
         }
@@ -39,6 +46,7 @@ namespace WebApplication2
             var clubEntity = SqlDal_Associations.GetAllAsd(true).First(c => c.Id == idClub);
 
             this.Title = "Club - " + clubEntity.NomeAsd;
+            clubAvatar.Src = pathHrefClubsImages + ClubImageHelper.GetImage(clubEntity.NomeAsd, absolutePath);
             lblClubName.Text = clubEntity.NomeAsd;
             lblClubPlace.Text = clubEntity.Place != "" && clubEntity.Place != null ? " - "+ clubEntity.Place : "";
             
@@ -52,14 +60,14 @@ namespace WebApplication2
                 return;
             
             Table table = new Table();
-            table.CssClass = "table table-hover table-striped";
+            table.CssClass = "table table-hover table-striped ";
 
             // Crea l'intestazione della tabella
             TableHeaderRow headerRow = new TableHeaderRow();
             headerRow.CssClass = "table-dark";
             headerRow.Cells.Add(new TableHeaderCell { Text = "Name", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-left", Width = Unit.Percentage(70) });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Active", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center", Width = Unit.Percentage(20) });
-            headerRow.Cells.Add(new TableHeaderCell { Text = "", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(10) });
+            headerRow.Cells.Add(new TableHeaderCell { Text = "Profile", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-right", Width = Unit.Percentage(10) });
 
             // Aggiungi l'intestazione alla tabella
             table.Rows.Add(headerRow);
@@ -90,7 +98,7 @@ namespace WebApplication2
                 
                 row.Cells.Add(activeCell);
 
-                TableCell profileCell =  new TableCell { Text = $@"<a href = ""Fighter.aspx?idFighter={fighter.IdAtleta}"" class=""btn btn-icon item-edit""><i class=""icon-base bx bx-edit icon-sm""></i></a>"};
+                TableCell profileCell =  new TableCell { Text = $@"<a href = ""Fighter.aspx?idFighter={fighter.IdAtleta}"" class=""btn btn-icon item-edit""><i class=""icon-base bx bxs-user-detail icon-sm""></i></a>" };
 
                 row.Cells.Add(profileCell);
 
@@ -123,5 +131,7 @@ namespace WebApplication2
 
             return randomValue;
         }
+
+        
     }
 }

@@ -63,7 +63,7 @@ namespace HemaTournamentWebSiteBLL.DAL
                                 "and g.IdTorneo = " + idTorneo + " " +
                                 "and g.IdDisciplina = " + idDisciplina + " " +
                                 "and r.IdDisciplina = " + idDisciplina +
-                                "order by g.IdGirone ASC, r.Punteggio DESC, asd.Nome_ASD ASC, a.Cognome ASC";
+                                "order by g.IdGirone ASC, g.OrdineAtleta asc";
 
             AtletaEntity a;
             int currentGirone = 0;

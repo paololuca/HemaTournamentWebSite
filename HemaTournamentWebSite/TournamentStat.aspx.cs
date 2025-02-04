@@ -79,6 +79,7 @@ namespace HemaTournamentWebSite
                 {
                     lblDiscipline.Text = " - " + disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
                     btnPoolsIndicators.Disabled = false;
+                    btnPoolsQualification.Disabled = false;
                 }
             }
 
@@ -382,7 +383,7 @@ namespace HemaTournamentWebSite
             // Crea l'intestazione della tabella
             TableHeaderRow headerRow = new TableHeaderRow();
             headerRow.Cells.Add(new TableHeaderCell { Text = "#", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
-            headerRow.Cells.Add(new TableHeaderCell { Text = "Qualified" });
+            //headerRow.Cells.Add(new TableHeaderCell { Text = "Qualified" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Surname" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Name" });
             headerRow.Cells.Add(new TableHeaderCell { Text = "Victory", HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
@@ -402,15 +403,15 @@ namespace HemaTournamentWebSite
                 TableRow row = new TableRow();
                 row.Cells.Add(new TableCell { Text = (pos + 1).ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
 
-                row.Cells.Add(new TableCell
-                {
-                    Text =
-                    countDeltaNotZero > atletiAmmessiEliminatorie / 2 ?
-                        pos < atletiAmmessiEliminatorie ?
-                            $"<span class='badge bg-label-success'>YES</span>" :
-                            $"<span class='badge bg-label-danger'>NO</span>" :
-                        $"<span></span>"
-                }); ;
+                //row.Cells.Add(new TableCell
+                //{
+                //    Text =
+                //    countDeltaNotZero > atletiAmmessiEliminatorie / 2 ?
+                //        pos < atletiAmmessiEliminatorie ?
+                //            $"<span class='badge bg-label-success'>YES</span>" :
+                //            $"<span class='badge bg-label-danger'>NO</span>" :
+                //        $"<span></span>"
+                //}); ;
                 row.Cells.Add(new TableCell { Text = s.Surname });
                 row.Cells.Add(new TableCell { Text = s.Name });
                 row.Cells.Add(new TableCell { Text = s.Victory.ToString(), HorizontalAlign = HorizontalAlign.Center, CssClass = "text-center" });
