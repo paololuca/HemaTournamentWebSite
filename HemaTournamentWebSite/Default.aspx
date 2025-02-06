@@ -75,7 +75,7 @@
     Whether you’re an experienced athlete, a curious beginner, or simply a fan of history and competition, we welcome you to join us in preserving the legacy of historical European martial arts while pushing the boundaries of modern sport.
   </p>
         <p>
-            Come and earn your rewards and achievmente in out world !!
+            Come and earn your rewards and achievmente in our world !!
         </p>
         <p></p>
     </div>

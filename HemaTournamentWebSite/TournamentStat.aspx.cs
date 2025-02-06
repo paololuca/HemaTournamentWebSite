@@ -1011,12 +1011,12 @@ namespace HemaTournamentWebSite
             positionCell.CssClass = "text-center";
             row.Cells.Add(positionCell);
 
-            clubCell = new TableCell { Text = $"{thirdPlace2.Split('#')[0]}" };
+            clubCell = new TableCell { Text = $"{thirdPlace2.Split('#')[1]}" };
 
             clubCell.CssClass = "text-start";
             row.Cells.Add(clubCell);
 
-            fighter = new TableCell { Text = $"{thirdPlace2.Split('#')[1]}" };
+            fighter = new TableCell { Text = $"{thirdPlace2.Split('#')[0]}" };
 
             fighter.CssClass = "text-start";
             row.Cells.Add(fighter);
