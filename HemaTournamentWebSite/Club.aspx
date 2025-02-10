@@ -6,6 +6,7 @@
     / <a href="Default.aspx">Home</a> / <a href="Clubs.aspx">Clubs</a>
 
     <div class="card">
+        <br />
         <div class="d-flex align-items-start align-items-sm-center gap-6 pb-4 border-bottom">
     <img alt="Club Logo" class="d-block w-px-230 h-px-150 rounded" id="clubAvatar" runat="server" src="#" />
             <h4>

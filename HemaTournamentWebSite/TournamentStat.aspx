@@ -217,7 +217,7 @@
         </div>
 
     </div>
-    <div class="row my-6">
+    <div class="row my-6 responsive-iframe-container small-container">
         <div class="col">
             <div class="nav-align-top mb-6">
                 <ul class="nav nav-pills mb-4 nav-fill" role="tablist">
@@ -259,11 +259,13 @@
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="navs-pills-justified-pools" role="tabpanel">
-                        <div class="text-nowrap" id="divPoolsList" runat="server">
-                        </div>
+                    <div class="tab-pane fade show active overflow-auto" id="navs-pills-justified-pools" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
+                        
+                            <div class="text-nowrap" id="divPoolsList" runat="server">
+                            </div>
+                        
                     </div>
-                    <div class="tab-pane fade" id="navs-pills-justified-matches" role="tabpanel">
+                    <div class="tab-pane fade overflow-auto" id="navs-pills-justified-matches" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                         <div class="text-nowrap" id="div1" runat="server">
                         </div>
                     </div>
@@ -333,23 +335,23 @@
                             </ul>
                         </div>
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="navs-pills-justified-16th" role="tabpanel">
+                            <div class="tab-pane fade show active overflow-auto" id="navs-pills-justified-16th" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                                 <div class="table-responsive text-nowrap" id="div16th" runat="server">
                                 </div>
                             </div>
-                            <div class="tab-pane fade show" id="navs-pills-justified-8th" role="tabpanel">
+                            <div class="tab-pane fade show overflow-auto" id="navs-pills-justified-8th" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                                 <div class="table-responsive text-nowrap" id="div8th" runat="server">
                                 </div>
                             </div>
-                            <div class="tab-pane fade show" id="navs-pills-justified-4th" role="tabpanel">
+                            <div class="tab-pane fade show overflow-auto" id="navs-pills-justified-4th" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                                 <div class="table-responsive text-nowrap" id="div4th" runat="server">
                                 </div>
                             </div>
-                            <div class="tab-pane fade show" id="navs-pills-justified-semifinal" role="tabpanel">
+                            <div class="tab-pane fade show overflow-auto" id="navs-pills-justified-semifinal" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                                 <div class="table-responsive text-nowrap" id="divSemifinal" runat="server">
                                 </div>
                             </div>
-                            <div class="tab-pane fade show" id="navs-pills-justified-finalResult" role="tabpanel">
+                            <div class="tab-pane fade show overflow-auto" id="navs-pills-justified-finalResult" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                                 <div class="table-responsive text-nowrap" id="divFinal" runat="server">
                                 </div>
                             </div>

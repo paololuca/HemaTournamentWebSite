@@ -7,13 +7,13 @@
             <asp:Image ID="Image1" runat="server"  ImageUrl="~/assets/img/swords.png" width="5%"/>
             HEMA Chronicles</h1>--%>
         <div id="carouselExample" class="carousel slide pointer-event" data-bs-ride="carousel">
-      <div class="carousel-indicators">
+      <%--<div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Slide 1" class="active" ></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
-      </div>
+      </div>--%>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="assets/img/elements/Banner/banner.png" alt="First slide">
@@ -55,7 +55,6 @@
         <br />
         <br />
         <p>
-
     Welcome to the world of <strong>HEMA</strong> (Historical European Martial Arts) Chronicles, where history meets sport, and passion meets competition.
   </p>
   <p>
