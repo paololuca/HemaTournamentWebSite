@@ -797,7 +797,7 @@ namespace HemaTournamentWebSite
             // Crea l'header della card
             var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
             cardHeader.Attributes["class"] = "card-header";
-            cardHeader.InnerText = $"Semifinalinal {semifinalfinal}";
+            cardHeader.InnerText = $"Semifinal {semifinalfinal}";
             cardDiv.Controls.Add(cardHeader);
 
             // Crea il div per la tabella
