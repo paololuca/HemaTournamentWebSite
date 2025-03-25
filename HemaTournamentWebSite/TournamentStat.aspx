@@ -1,7 +1,163 @@
 ﻿<%@ Page Title="Tournament Stats" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="TournamentStat.aspx.cs" Inherits="HemaTournamentWebSite.WebForm1Prova" %>
 
+<asp:Content ID="head" ContentPlaceHolderID="HeadContent" runat="server">
+    <style>
+        .tournament-bracket {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            min-height: 600px;
+        }
+
+        .bracket-half {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+        }
+
+        .bracket-final {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 40px;
+        }
+
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .match-pair {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .match {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .match-box {
+            border: 2px solid #ccc;
+            padding: 8px 12px;
+            margin: 5px 0;
+            width: 150px;
+            height: 40px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .match-box.droppable {
+            border-style: solid;
+        }
+
+        .match-box.droppable.dragover {
+            background-color: #e2e6ea;
+            border-color: #007bff;
+        }
+
+        .trophy {
+            font-size: 2em;
+            color: gold;
+            margin-top: 20px;
+        }
+
+        .fighter-item {
+            cursor: move;
+            padding: 8px;
+            margin: 4px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .fighter-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Connectors */
+        .match::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            width: 20px;
+            height: 2px;
+            background-color: #ccc;
+        }
+
+        .match::before {
+            content: '';
+            position: absolute;
+            right: -20px;
+            height: 100%;
+            width: 2px;
+            background-color: #ccc;
+        }
+
+        .match:last-child::before {
+            display: none;
+        }
+
+        .bracket-final .match::after,
+        .bracket-final .match::before {
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            // Make fighters draggable
+            $('.fighter-item').on('dragstart', function(e) {
+                $(this).addClass('dragging');
+                e.originalEvent.dataTransfer.setData('text/plain', $(this).data('fighter-id'));
+            });
+
+            $('.fighter-item').on('dragend', function() {
+                $(this).removeClass('dragging');
+            });
+
+            // Make match boxes droppable
+            $('.match-box').on('dragover', function(e) {
+                e.preventDefault();
+                $(this).addClass('dragover');
+            });
+
+            $('.match-box').on('dragleave', function() {
+                $(this).removeClass('dragover');
+            });
+
+            $('.match-box').on('drop', function(e) {
+                e.preventDefault();
+                $(this).removeClass('dragover');
+                
+                var fighterId = e.originalEvent.dataTransfer.getData('text/plain');
+                var fighter = $(`[data-fighter-id="${fighterId}"]`);
+                
+                $(this).empty().append(fighter.text());
+                $(this).data('fighter-id', fighterId);
+            });
+        });
+    </script>
+</asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    / <a href="Default.aspx">Home</a> / <a href="TournamentDates.aspx">Tournaments</a>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
+            <li class="breadcrumb-item"><a href="TournamentDates.aspx">Tournaments</a></li>
+            <li class="breadcrumb-item active">Tournament Stats</li>
+        </ol>
+    </nav>
     <h3>Tournament Stats -
         <asp:Label ID="lblTournament" runat="server"></asp:Label><asp:Label ID="lblDiscipline" runat="server"></asp:Label></h3>
     <%--    <div class="btn-group" runat="server" id="btnTournament">
@@ -24,7 +180,7 @@
 
         <div class="col-lg-3 col-md-6">
             <div class="mt-4">
-                <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" 
+                <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" runat="server" />
                 <ul class="dropdown-menu" runat="server" id="dropdownDisciplineMenu"></ul>
                 <button
@@ -213,6 +369,142 @@
                     </div>
                 </div>
 
+
+                <%--<button type="button" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#modalBracketScrollable" id="btnBracket" runat="server"
+                    title="Pool's Bracket" disabled">
+                    <span class="tf-icons bx bx bx-git-repo-forked bx-22px"></span>
+                </button>--%>
+                <div class="modal fade" id="modalBracketScrollable" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog modal-fullscreen modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalBracketScrollableTitle">Pool's Bracket</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive text-nowrap" id="divbracket" runat="server">
+                                    <div class="tournament-bracket">
+                <!-- Left Side -->
+                <div class="bracket-half">
+                    <!-- First Round - Left -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"><p>ciccio</p></div>
+                                <div class="match-box droppable">pasticcio</div>
+                            </div>
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Round - Left -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Round - Left -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match-box droppable"></div>
+                            <div class="match-box droppable"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final -->
+                <div class="bracket-final">
+                    <div class="match">
+                        <div class="match-box droppable"></div>
+                        <div class="match-box droppable"></div>
+                    </div>
+                    <div class="trophy">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="bracket-half">
+                    <!-- Third Round - Right -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match-box droppable"></div>
+                            <div class="match-box droppable"></div>
+                        </div>
+                    </div>
+
+                    <!-- Second Round - Right -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First Round - Right -->
+                    <div class="round">
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                        <div class="match">
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                            <div class="match">
+                                <div class="match-box droppable"></div>
+                                <div class="match-box droppable"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -260,10 +552,10 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active overflow-auto" id="navs-pills-justified-pools" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
-                        
-                            <div class="text-nowrap" id="divPoolsList" runat="server">
-                            </div>
-                        
+
+                        <div class="text-nowrap" id="divPoolsList" runat="server">
+                        </div>
+
                     </div>
                     <div class="tab-pane fade overflow-auto" id="navs-pills-justified-matches" role="tabpanel" style="max-width: 8000px; max-height: 700px;">
                         <div class="text-nowrap" id="div1" runat="server">

@@ -5,7 +5,12 @@
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    / <a href="Default.aspx">Home</a>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
+            <li class="breadcrumb-item active">About</li>
+        </ol>
+    </nav>
 
     <section class="py-5">
 	<div class="container">

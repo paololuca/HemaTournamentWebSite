@@ -211,20 +211,18 @@ namespace HemaTournamentWebSiteBLL.DAL
                         IsEnabled = Convert.ToBoolean(reader["IsEnabled"])
                     });
                 }
-                if (atleti.Count > 0)
-                    return atleti;
-                else
-                    return null;
+                
             }
             catch (Exception e)
             {
-                return null;
+                
             }
             finally
             {
                 if (c.State == ConnectionState.Open)
                     c.Close();
             }
+            return atleti;
         }
 
         public static List<AtletaEntity> GetAllAnagraficaAtleti(int idAsd)

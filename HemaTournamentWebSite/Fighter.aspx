@@ -3,8 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    / <a href="Default.aspx">Home</a> / <a href="Clubs.aspx">Clubs </a>/ <a href="Fighters.aspx">Fighters </a>
-    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
+            <li class="breadcrumb-item"><a href="Clubs.aspx">Clubs </a></li>
+            <li class="breadcrumb-item"><a href="Fighters.aspx">Fighters </a></li>
+            <li class="breadcrumb-item active">Fighter</li>
+        </ol>
+    </nav>
     
     <div class="container-p-y" runat="server" id="WIP" visible="true">
         <div class="misc-wrapper">

@@ -2,7 +2,15 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
+            <li class="breadcrumb-item"><a href="Clubs.aspx">Clubs</a></li>
+            <li class="breadcrumb-item active">Club Details</li>
+        </ol>
+    </nav>
+
     / <a href="Default.aspx">Home</a> / <a href="Clubs.aspx">Clubs</a>
 
     <div class="card">

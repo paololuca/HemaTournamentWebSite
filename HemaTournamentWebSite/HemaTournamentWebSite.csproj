@@ -253,6 +253,7 @@
     <Content Include="Documents\Regolamento 2025.pdf" />
     <Content Include="Documents\Ranking\Ranking 20251601.pdf" />
     <Content Include="Documents\Regolamento Campionato Scherma Storica ASC_2.03.pdf" />
+    <Content Include="Documents\Ranking\Ranking - Qualificati 2024 2025.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

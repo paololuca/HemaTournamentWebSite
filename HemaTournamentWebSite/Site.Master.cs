@@ -26,12 +26,13 @@ namespace HemaTournamentWebSite
                     SetActiveMenu("homeMenu");
                     break;
                 case "fighters":
+                case "fighter":
                     SetActiveMenu("fightersMenu");
                     break;
                 case "about":
                     SetActiveMenu("aboutMenu");
                     break;
-                case "documents":
+                case "archive":
                     SetActiveMenu("documentsMenu");
                     break;
                 case "contact":
@@ -41,12 +42,14 @@ namespace HemaTournamentWebSite
                     SetActiveMenu("dashboardMenu");
                     break;
                 case "tournamentdates":
+                case "tournamentstat":
                     SetActiveMenu("datesMenu");
                     break;
                 case "calendar":
                     SetActiveMenu("calendarMenu");
                     break;
                 case "clubs":
+                case "club":
                     SetActiveMenu("clubsMenu");
                     break;
                     //clubsMenu, datesMenu

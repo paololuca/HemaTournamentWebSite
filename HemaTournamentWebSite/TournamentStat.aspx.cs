@@ -80,6 +80,7 @@ namespace HemaTournamentWebSite
                     lblDiscipline.Text = " - " + disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
                     btnPoolsIndicators.Disabled = false;
                     btnPoolsQualification.Disabled = false;
+                    //btnBracket.Disabled = false;
                 }
             }
 

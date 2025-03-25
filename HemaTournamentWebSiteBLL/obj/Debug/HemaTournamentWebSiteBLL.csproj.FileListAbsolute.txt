@@ -1,18 +1,27 @@
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.dll
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.pdb
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.AssemblyReference.cache
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.CoreCompileInputs.cache
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.dll
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.pdb
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.dll
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.pdb
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.AssemblyReference.cache
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.CoreCompileInputs.cache
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.dll
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.pdb
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
-C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
 C:\Users\paolo\source\repos\CGS\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.pdb
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.AssemblyReference.cache
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.CoreCompileInputs.cache
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.pdb
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\HemaTournamentWebSiteBLL.pdb
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.AssemblyReference.cache
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.csproj.CoreCompileInputs.cache
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTour.04B110C3.Up2Date
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.dll
+C:\Users\PaoloLuca\OneDrive - twoteam.it\Documents\source\GitHub\HemaTournamentWebSite\HemaTournamentWebSiteBLL\obj\Debug\HemaTournamentWebSiteBLL.pdb
