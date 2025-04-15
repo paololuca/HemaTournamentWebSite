@@ -17,6 +17,8 @@ namespace HemaTournamentWebSiteBLL.BusinessEntity.DAO
         public Int32 Posizione { get; set; }
         public Int32 Campo { get; set; }
 
+        public string BracketName { get { return Cognome + " " + Nome.Substring(0, 1) + "."; } }
+
 
         public AtletaEliminatorie()
         {

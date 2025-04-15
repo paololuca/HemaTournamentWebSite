@@ -4,146 +4,137 @@
     <style>
         .tournament-bracket {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 20px;
-            position: relative;
-            min-height: 600px;
-        }
-
-        .bracket-half {
-            display: flex;
-            flex: 1;
             justify-content: space-around;
-        }
-
-        .bracket-final {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 40px;
+            padding: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        
+            color: #333;
         }
 
         .round {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 20px;
-        }
-
-        .match-pair {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin: 20px 0;
-            position: relative;
+            margin: 0 15px;
         }
 
         .match {
             display: flex;
             flex-direction: column;
-            margin: 10px 0;
+            margin: 8px 0;
             position: relative;
         }
 
         .match-box {
-            border: 2px solid #ccc;
-            padding: 8px 12px;
-            margin: 5px 0;
-            width: 150px;
-            height: 40px;
-            background-color: #fff;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .match-box.droppable {
-            border-style: solid;
-        }
-
-        .match-box.droppable.dragover {
-            background-color: #e2e6ea;
-            border-color: #007bff;
-        }
-
-        .trophy {
-            font-size: 2em;
-            color: gold;
-            margin-top: 20px;
-        }
-
-        .fighter-item {
-            cursor: move;
-            padding: 8px;
-            margin: 4px 0;
-            background-color: #fff;
+            width: 160px;
             border: 1px solid #ddd;
             border-radius: 4px;
+            margin: 2px 0;
+            padding: 4px;
+            background: linear-gradient(to bottom, #696CFF, #34495e);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.2s ease;
         }
 
-        .fighter-item:hover {
-            background-color: #f8f9fa;
+        .match-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        /* Connectors */
-        .match::after {
-            content: '';
+        .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+        .player:last-child {
+            border-bottom: none;
+        }
+
+        .score {
+            margin-left: 8px;
+            font-weight: bold;
+            color: #ffd700;
+            background: rgba(0,0,0,0.2);
+            padding: 2px 6px;
+            border-radius: 3px;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .connector-right {
             position: absolute;
-            right: -20px;
+            right: -15px;
             top: 50%;
-            width: 20px;
+            width: 15px;
             height: 2px;
-            background-color: #ccc;
+            background-color: #95a5a6;
         }
 
-        .match::before {
+        .connector-right::after {
             content: '';
             position: absolute;
-            right: -20px;
-            height: 100%;
+            right: 0;
+            top: -25px;
             width: 2px;
-            background-color: #ccc;
+            height: 50px;
+            background-color: #95a5a6;
         }
 
-        .match:last-child::before {
-            display: none;
+        .connector-left {
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            width: 15px;
+            height: 2px;
+            background-color: #95a5a6;
         }
 
-        .bracket-final .match::after,
-        .bracket-final .match::before {
-            display: none;
+        .connector-left::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -25px;
+            width: 2px;
+            height: 50px;
+            background-color: #95a5a6;
         }
     </style>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Make fighters draggable
-            $('.fighter-item').on('dragstart', function(e) {
+            $('.fighter-item').on('dragstart', function (e) {
                 $(this).addClass('dragging');
                 e.originalEvent.dataTransfer.setData('text/plain', $(this).data('fighter-id'));
             });
 
-            $('.fighter-item').on('dragend', function() {
+            $('.fighter-item').on('dragend', function () {
                 $(this).removeClass('dragging');
             });
 
             // Make match boxes droppable
-            $('.match-box').on('dragover', function(e) {
+            $('.match-box').on('dragover', function (e) {
                 e.preventDefault();
                 $(this).addClass('dragover');
             });
 
-            $('.match-box').on('dragleave', function() {
+            $('.match-box').on('dragleave', function () {
                 $(this).removeClass('dragover');
             });
 
-            $('.match-box').on('drop', function(e) {
+            $('.match-box').on('drop', function (e) {
                 e.preventDefault();
                 $(this).removeClass('dragover');
-                
+
                 var fighterId = e.originalEvent.dataTransfer.getData('text/plain');
                 var fighter = $(`[data-fighter-id="${fighterId}"]`);
-                
+
                 $(this).empty().append(fighter.text());
                 $(this).data('fighter-id', fighterId);
             });
@@ -178,7 +169,7 @@
     </div>
 </div>--%>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-4 col-md-6">
             <div class="mt-4">
                 <asp:Button type="button" Text="Choose discipline" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" runat="server" />
@@ -370,133 +361,268 @@
                 </div>
 
 
-                <%--<button type="button" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#modalBracketScrollable" id="btnBracket" runat="server"
-                    title="Pool's Bracket" disabled">
+                <button type="button" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#modalBracketScrollable" id="btnBracketFinalPhases" runat="server"
+                    title="Pool's Bracket" disabled>
                     <span class="tf-icons bx bx bx-git-repo-forked bx-22px"></span>
-                </button>--%>
+                </button>
                 <div class="modal fade" id="modalBracketScrollable" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog modal-fullscreen modal-dialog-scrollable" role="document">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalBracketScrollableTitle">Pool's Bracket</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
                             <div class="modal-body">
                                 <div class="table-responsive text-nowrap" id="divbracket" runat="server">
-                                    <div class="tournament-bracket">
-                <!-- Left Side -->
-                <div class="bracket-half">
-                    <!-- First Round - Left -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"><p>ciccio</p></div>
-                                <div class="match-box droppable">pasticcio</div>
-                            </div>
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                    </div>
+                                    <div class="tournament-bracket" id="tournamentBracket16th"  runat="server">
+                                        <!-- Round 1 - Left Side -->
+                                        <div class="round" id="LeftZone16th" runat="server">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_2Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_4Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_5"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_5Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_6"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_6Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_7"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_7Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th1_8"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th1_8Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_2Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_4Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_5"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_5Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_6"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_6Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_7"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_7Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th4_8"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th4_8Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <!-- Add more matches for Round 1 left side -->
+                                        </div>
 
-                    <!-- Second Round - Left -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                    </div>
+                                        <!-- Round 2 - Left Side -->
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Carola Longo <span class="score">3</span></div>
+                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Carola Longo <span class="score">3</span></div>
+                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Carola Longo <span class="score">3</span></div>
+                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Carola Longo <span class="score">3</span></div>
+                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <!-- Add more matches for Round 2 left side -->
+                                        </div>
 
-                    <!-- Third Round - Left -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match-box droppable"></div>
-                            <div class="match-box droppable"></div>
-                        </div>
-                    </div>
-                </div>
+                                        <!-- Round 3 - Left Side -->
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Claudio Ugolini <span class="score">9</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Claudio Ugolini <span class="score">9</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-right"></div>
+                                            </div>
+                                        </div>
 
-                <!-- Final -->
-                <div class="bracket-final">
-                    <div class="match">
-                        <div class="match-box droppable"></div>
-                        <div class="match-box droppable"></div>
-                    </div>
-                    <div class="trophy">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                </div>
+                                        <!-- Final Round -->
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Semi-Fi1 Left <span class="score">0</span></div>
+                                                    <div class="player">Semi-Fi2 Left <span class="score">0</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="round">
+                                            <div class="match">
+                                                <br><br><br><br><br><br><br><br><br>
+                                                <div class="match-box">
+                                                    <div class="player">Winner Left <span class="score">0</span></div>
+                                                    <div class="player">Winner Right <span class="score">0</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Semi-Fi1 Right <span class="score">0</span></div>
+                                                    <div class="player">Semi-Fi2 Right <span class="score">0</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                <!-- Right Side -->
-                <div class="bracket-half">
-                    <!-- Third Round - Right -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match-box droppable"></div>
-                            <div class="match-box droppable"></div>
-                        </div>
-                    </div>
 
-                    <!-- Second Round - Right -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                    </div>
+                                        <!-- Round 3 - Right Side -->
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                        </div>
 
-                    <!-- First Round - Right -->
-                    <div class="round">
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                        <div class="match">
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                            <div class="match">
-                                <div class="match-box droppable"></div>
-                                <div class="match-box droppable"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                        <!-- Round 2 - Right Side -->
+                                        <div class="round">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <!-- Add more matches for Round 2 right side -->
+                                        </div>
+
+                                        <!-- Round 1 - Right Side -->
+                                        <div class="round" id="RightZone16th" runat="server">
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_2Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_4Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_5"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_5Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_6"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_6Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_7"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_7Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th2_8"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th2_8Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_2Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_4Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_5"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_5Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_6"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_6Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <div class="match">
+                                                <div class="match-box">
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_7"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_7Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket16th3_8"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket16th3_8Score"></asp:Label></span></div>
+                                                </div>
+                                                <div class="connector-left"></div>
+                                            </div>
+                                            <!-- Add more matches for Round 1 right side -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">

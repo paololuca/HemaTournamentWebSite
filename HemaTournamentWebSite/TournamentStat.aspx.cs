@@ -9,13 +9,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using HemaTournamentWebSiteBLL.Manager;
 using HemaTournamentWebSiteBLL.BusinessEntity.Entity;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Policy;
 using HemaTournamentWebSiteBLL.BusinessEntity.DAO;
 using System.Drawing;
-using System.Web.UI.WebControls.WebParts;
+using System.Data;
 
 namespace HemaTournamentWebSite
 {
@@ -36,6 +33,7 @@ namespace HemaTournamentWebSite
 
         private List<Matches> matches;
         private bool debug;
+        private int atletiAmmessiEliminatorie;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -80,7 +78,7 @@ namespace HemaTournamentWebSite
                     lblDiscipline.Text = " - " + disciplineList.ElementAt(disciplineIdList.IndexOf(discipline));
                     btnPoolsIndicators.Disabled = false;
                     btnPoolsQualification.Disabled = false;
-                    //btnBracket.Disabled = false;
+                    btnBracketFinalPhases.Disabled = false;
                 }
             }
 
@@ -89,16 +87,18 @@ namespace HemaTournamentWebSite
                 CreatePoolsList();
                 CreateMatchesList();
                 SetRanking();
+                SetBracket();
                 SetFinalPhases();
             }
         }
+
+        
 
         private void LoadDisciplineDropdownItems()
         {
             // Cancella eventuali elementi esistenti (necessario per evitare duplicati durante i postback)
             dropdownDisciplineMenu.Controls.Clear();
 
-            
             int tempKey = 0;
             foreach (var tournament in disciplineList)
             {
@@ -374,7 +374,7 @@ namespace HemaTournamentWebSite
 
             int countDeltaNotZero = stats.Where(s => s.Delta > 0).Count();
 
-            var atletiAmmessiEliminatorie = stats.Count >= 54 ? 32 :
+            atletiAmmessiEliminatorie = stats.Count >= 54 ? 32 :
                          stats.Count >= 24 ? 16 :
                          stats.Count >= 12 ? 8 : 4;
 
@@ -432,6 +432,21 @@ namespace HemaTournamentWebSite
 
             SetStats(stats, countDeltaNotZero, atletiAmmessiEliminatorie);
         }
+
+        private void SetBracket()
+        {
+            if (disciplineId == 0 || tournamentId == 0)
+                return;
+
+            if(atletiAmmessiEliminatorie != 32)
+            {
+                LeftZone16th.Visible = false;
+                RightZone16th.Visible = false;
+            }
+
+        }
+
+
         private void SetStats(List<Stats> stats, int countDeltaNotZero, int atletiAmmessiEliminatorie)
         {
             if(stats != null && stats.Count > 0)
@@ -517,6 +532,7 @@ namespace HemaTournamentWebSite
 
             // Crea la tabella
             Table table1 = Branch16thTable(atleta1, atleta2, atleta3,  atleta4, atleta5, atleta6, atleta7, atleta8);
+            Fill16thBracket(branch, atleta1, atleta2, atleta3, atleta4, atleta5, atleta6, atleta7, atleta8);
 
             tableDiv.Controls.Add(table1);
 
@@ -531,6 +547,86 @@ namespace HemaTournamentWebSite
             var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
             div16th.Controls.Add(cardDiv);
             div16th.Controls.Add(hr);
+        }
+
+        private void Fill16thBracket(int branch, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2, AtletaEliminatorie atleta3, AtletaEliminatorie atleta4, AtletaEliminatorie atleta5, AtletaEliminatorie atleta6, AtletaEliminatorie atleta7, AtletaEliminatorie atleta8)
+        {
+            if (branch == 1)
+            {
+                lblBracket16th1_1.Text = atleta1.BracketName;
+                lblBracket16th1_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket16th1_2.Text = atleta2.BracketName;
+                lblBracket16th1_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket16th1_3.Text = atleta3.BracketName;
+                lblBracket16th1_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket16th1_4.Text = atleta4.BracketName;
+                lblBracket16th1_4Score.Text = atleta4.PuntiFatti.ToString();
+                lblBracket16th1_5.Text = atleta5.BracketName;
+                lblBracket16th1_5Score.Text = atleta5.PuntiFatti.ToString();
+                lblBracket16th1_6.Text = atleta6.BracketName;
+                lblBracket16th1_6Score.Text = atleta6.PuntiFatti.ToString();
+                lblBracket16th1_7.Text = atleta7.BracketName;
+                lblBracket16th1_7Score.Text = atleta7.PuntiFatti.ToString();
+                lblBracket16th1_8.Text = atleta8.BracketName;
+                lblBracket16th1_8Score.Text = atleta8.PuntiFatti.ToString();
+            }
+            else if (branch == 2)
+            {
+                lblBracket16th2_1.Text = atleta1.BracketName;
+                lblBracket16th2_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket16th2_2.Text = atleta2.BracketName;
+                lblBracket16th2_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket16th2_3.Text = atleta3.BracketName;
+                lblBracket16th2_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket16th2_4.Text = atleta4.BracketName;
+                lblBracket16th2_4Score.Text = atleta4.PuntiFatti.ToString();
+                lblBracket16th2_5.Text = atleta5.BracketName;
+                lblBracket16th2_5Score.Text = atleta5.PuntiFatti.ToString();
+                lblBracket16th2_6.Text = atleta6.BracketName;
+                lblBracket16th2_6Score.Text = atleta6.PuntiFatti.ToString();
+                lblBracket16th2_7.Text = atleta7.BracketName;
+                lblBracket16th2_7Score.Text = atleta7.PuntiFatti.ToString();
+                lblBracket16th2_8.Text = atleta8.BracketName;
+                lblBracket16th2_8Score.Text = atleta8.PuntiFatti.ToString();
+            }
+            else if (branch == 3)
+            {
+                lblBracket16th3_1.Text = atleta1.BracketName;
+                lblBracket16th3_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket16th3_2.Text = atleta2.BracketName;
+                lblBracket16th3_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket16th3_3.Text = atleta3.BracketName;
+                lblBracket16th3_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket16th3_4.Text = atleta4.BracketName;
+                lblBracket16th3_4Score.Text = atleta4.PuntiFatti.ToString();
+                lblBracket16th3_5.Text = atleta5.BracketName;
+                lblBracket16th3_5Score.Text = atleta5.PuntiFatti.ToString();
+                lblBracket16th3_6.Text = atleta6.BracketName;
+                lblBracket16th3_6Score.Text = atleta6.PuntiFatti.ToString();
+                lblBracket16th3_7.Text = atleta7.BracketName;
+                lblBracket16th3_7Score.Text = atleta7.PuntiFatti.ToString();
+                lblBracket16th3_8.Text = atleta8.BracketName;
+                lblBracket16th3_8Score.Text = atleta8.PuntiFatti.ToString();
+            }
+            else if (branch == 4)
+            {
+                lblBracket16th4_1.Text = atleta1.BracketName;
+                lblBracket16th4_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket16th4_2.Text = atleta2.BracketName;
+                lblBracket16th4_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket16th4_3.Text = atleta3.BracketName;
+                lblBracket16th4_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket16th4_4.Text = atleta4.BracketName;
+                lblBracket16th4_4Score.Text = atleta4.PuntiFatti.ToString();
+                lblBracket16th4_5.Text = atleta5.BracketName;
+                lblBracket16th4_5Score.Text = atleta5.PuntiFatti.ToString();
+                lblBracket16th4_6.Text = atleta6.BracketName;
+                lblBracket16th4_6Score.Text = atleta6.PuntiFatti.ToString();
+                lblBracket16th4_7.Text = atleta7.BracketName;
+                lblBracket16th4_7Score.Text = atleta7.PuntiFatti.ToString();
+                lblBracket16th4_8.Text = atleta8.BracketName;
+                lblBracket16th4_8Score.Text = atleta8.PuntiFatti.ToString();
+            }
         }
 
         private Table Branch16thTable(AtletaEliminatorie atletaEliminatorie1, AtletaEliminatorie atletaEliminatorie2,
