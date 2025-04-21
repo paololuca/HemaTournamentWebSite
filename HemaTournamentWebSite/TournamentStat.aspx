@@ -37,6 +37,19 @@
             transition: transform 0.2s ease;
         }
 
+        .match-box-winner {
+            width: 160px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 2px 0;
+            padding: 4px;
+            background: linear-gradient(to bottom, #ffd700, #fffa00);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.2s ease;
+            text-align:center;
+        }
+
         .match-box:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -50,6 +63,16 @@
             border-bottom: 1px solid rgba(255,255,255,0.1);
             font-size: 0.9em;
             color: #fff;
+        }
+
+        .player-winner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9em;
+            color: #000;
         }
 
         .player:last-child {
@@ -66,8 +89,12 @@
             min-width: 24px;
             text-align: center;
         }
-
-        .connector-right {
+     
+    #modalBracketScrollable .modal-content {
+        background-color: black;
+        color: white;
+    }
+        /*.connector-right {
             position: absolute;
             right: -15px;
             top: 50%;
@@ -103,7 +130,7 @@
             width: 2px;
             height: 50px;
             background-color: #95a5a6;
-        }
+        }*/
     </style>
 
     <script>
@@ -369,7 +396,7 @@
                     <div class="modal-dialog modal-dialog modal-fullscreen modal-dialog-scrollable" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <div class="table-responsive text-nowrap" id="divbracket" runat="server">
+                                <div class="table-responsive text-nowrap" id="divbracket" runat="server" style="overflow-x:auto; white-space:nowrap;">
                                     <div class="tournament-bracket" id="tournamentBracket16th"  runat="server">
                                         <!-- Round 1 - Left Side -->
                                         <div class="round" id="LeftZone16th" runat="server">
@@ -436,29 +463,29 @@
                                         <div class="round">
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Carola Longo <span class="score">3</span></div>
-                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th1_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th1_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th1_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th1_2Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Carola Longo <span class="score">3</span></div>
-                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th1_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th1_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th1_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th1_4Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Carola Longo <span class="score">3</span></div>
-                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th4_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th4_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th4_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th4_2Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Carola Longo <span class="score">3</span></div>
-                                                    <div class="player">Claudio Ugolini <span class="score">12</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th4_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th4_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th4_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th4_4Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
@@ -469,15 +496,15 @@
                                         <div class="round">
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Claudio Ugolini <span class="score">9</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th1_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th1_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th1_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th1_2Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Claudio Ugolini <span class="score">9</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th4_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th4_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th4_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th4_2Score"></asp:Label></span></div>
                                                 </div>
                                                 <div class="connector-right"></div>
                                             </div>
@@ -487,25 +514,25 @@
                                         <div class="round">
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Semi-Fi1 Left <span class="score">0</span></div>
-                                                    <div class="player">Semi-Fi2 Left <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracketSth1_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracketSth1_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracketSth1_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracketSth1_2Score"></asp:Label></span></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="round">
                                             <div class="match">
                                                 <br><br><br><br><br><br><br><br><br>
-                                                <div class="match-box">
-                                                    <div class="player">Winner Left <span class="score">0</span></div>
-                                                    <div class="player">Winner Right <span class="score">0</span></div>
+                                                <div class="match-box-winner">
+                                                    <div class="player-winner" style="align-content:center"><asp:Label runat="server" ID="lblBracketFth1_1"></asp:Label></div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="round">
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Semi-Fi1 Right <span class="score">0</span></div>
-                                                    <div class="player">Semi-Fi2 Right <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracketSth2_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracketSth2_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracketSth2_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracketSth2_2Score"></asp:Label></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -515,52 +542,54 @@
                                         <div class="round">
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th2_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th2_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th2_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th2_2Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th3_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th3_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket4th3_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket4th3_2Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
                                         </div>
 
                                         <!-- Round 2 - Right Side -->
                                         <div class="round">
+                                            
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th2_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th2_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th2_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th2_2Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th2_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th2_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th2_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th2_4Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th3_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th3_1Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th3_2"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th3_2Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
                                             <div class="match">
                                                 <div class="match-box">
-                                                    <div class="player">Player Name <span class="score">0</span></div>
-                                                    <div class="player">Player Name <span class="score">0</span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th3_3"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th3_3Score"></asp:Label></span></div>
+                                                    <div class="player"><asp:Label runat="server" ID="lblBracket8th3_4"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th3_4Score"></asp:Label></span></div>
                                                 </div>
-                                                <div class="connector-left"></div>
+                                                <div class="connector-right"></div>
                                             </div>
-                                            <!-- Add more matches for Round 2 right side -->
+                                            <!-- Add more matches for Round 2 left side -->
                                         </div>
+
 
                                         <!-- Round 1 - Right Side -->
                                         <div class="round" id="RightZone16th" runat="server">

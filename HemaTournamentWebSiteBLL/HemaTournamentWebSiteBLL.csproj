@@ -38,6 +38,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -85,6 +86,7 @@
     <Compile Include="DAL\SqlTournamentHema.cs" />
     <Compile Include="Helper\EncryptionHelper.cs" />
     <Compile Include="Helper\Helper.cs" />
+    <Compile Include="Helper\HtmlTableHelper.cs" />
     <Compile Include="Helper\MobileAppHelper.cs" />
     <Compile Include="Helper\PathResolver.cs" />
     <Compile Include="Manager\PhasesManager.cs" />

@@ -721,6 +721,7 @@ namespace HemaTournamentWebSite
 
             // Crea la tabella
             Table table1 = Branch8thTable(atleta1, atleta2, atleta3, atleta4);
+            Fill8thBracket(branch, atleta1, atleta2, atleta3, atleta4);
 
             tableDiv.Controls.Add(table1);
 
@@ -735,6 +736,55 @@ namespace HemaTournamentWebSite
             var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
             div8th.Controls.Add(cardDiv);
             div8th.Controls.Add(hr);
+        }
+
+        private void Fill8thBracket(int branch, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2, AtletaEliminatorie atleta3, AtletaEliminatorie atleta4)
+        {
+            if (branch == 1)
+            {
+                lblBracket8th1_1.Text = atleta1.BracketName;
+                lblBracket8th1_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket8th1_2.Text = atleta2.BracketName;
+                lblBracket8th1_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket8th1_3.Text = atleta3.BracketName;
+                lblBracket8th1_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket8th1_4.Text = atleta4.BracketName;
+                lblBracket8th1_4Score.Text = atleta4.PuntiFatti.ToString();
+            }
+            else if (branch == 2)
+            {
+                lblBracket8th2_1.Text = atleta1.BracketName;
+                lblBracket8th2_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket8th2_2.Text = atleta2.BracketName;
+                lblBracket8th2_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket8th2_3.Text = atleta3.BracketName;
+                lblBracket8th2_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket8th2_4.Text = atleta4.BracketName;
+                lblBracket8th2_4Score.Text = atleta4.PuntiFatti.ToString();
+            }
+            else if (branch == 3)
+            {
+                lblBracket8th3_1.Text = atleta1.BracketName;
+                lblBracket8th3_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket8th3_2.Text = atleta2.BracketName;
+                lblBracket8th3_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket8th3_3.Text = atleta3.BracketName;
+                lblBracket8th3_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket8th3_4.Text = atleta4.BracketName;
+                lblBracket8th3_4Score.Text = atleta4.PuntiFatti.ToString();
+
+            }
+            else if (branch == 4)
+            {
+                lblBracket8th4_1.Text = atleta1.BracketName;
+                lblBracket8th4_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket8th4_2.Text = atleta2.BracketName;
+                lblBracket8th4_2Score.Text = atleta2.PuntiFatti.ToString();
+                lblBracket8th4_3.Text = atleta3.BracketName;
+                lblBracket8th4_3Score.Text = atleta3.PuntiFatti.ToString();
+                lblBracket8th4_4.Text = atleta4.BracketName;
+                lblBracket8th4_4Score.Text = atleta4.PuntiFatti.ToString();
+            }
         }
 
         private Table Branch8thTable(AtletaEliminatorie atletaEliminatorie1, AtletaEliminatorie atletaEliminatorie2, AtletaEliminatorie atletaEliminatorie3, AtletaEliminatorie atletaEliminatorie4)
@@ -816,6 +866,7 @@ namespace HemaTournamentWebSite
 
             // Crea la tabella
             Table table1 = Branch4thTable(atleta1, atleta2);
+            Fill4thBracket(branch, atleta1, atleta2);
 
             tableDiv.Controls.Add(table1);
 
@@ -830,6 +881,39 @@ namespace HemaTournamentWebSite
             var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
             div4th.Controls.Add(cardDiv);
             div4th.Controls.Add(hr);
+        }
+
+        private void Fill4thBracket(int branch, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2)
+        {
+            if (branch == 1)
+            {
+                lblBracket4th1_1.Text = atleta1.BracketName;
+                lblBracket4th1_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket4th1_2.Text = atleta2.BracketName;
+                lblBracket4th1_2Score.Text = atleta2.PuntiFatti.ToString();
+            }
+            else if (branch == 2)
+            {
+                lblBracket4th2_1.Text = atleta1.BracketName;
+                lblBracket4th2_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket4th2_2.Text = atleta2.BracketName;
+                lblBracket4th2_2Score.Text = atleta2.PuntiFatti.ToString();
+            }
+            else if (branch == 3)
+            {
+                lblBracket4th3_1.Text = atleta1.BracketName;
+                lblBracket4th3_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket4th3_2.Text = atleta2.BracketName;
+                lblBracket4th3_2Score.Text = atleta2.PuntiFatti.ToString();
+
+            }
+            else if (branch == 4)
+            {
+                lblBracket4th4_1.Text = atleta1.BracketName;
+                lblBracket4th4_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracket4th4_2.Text = atleta2.BracketName;
+                lblBracket4th4_2Score.Text = atleta2.PuntiFatti.ToString();
+            }
         }
 
         private Table Branch4thTable(AtletaEliminatorie atletaEliminatorie1, AtletaEliminatorie atletaEliminatorie2)
@@ -885,7 +969,7 @@ namespace HemaTournamentWebSite
             }
         }
 
-        private void GetBranchSemifinal(int semifinalfinal, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2)
+        private void GetBranchSemifinal(int semifinal, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2)
         {
             // Crea il div della card
             var cardDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
@@ -894,7 +978,7 @@ namespace HemaTournamentWebSite
             // Crea l'header della card
             var cardHeader = new System.Web.UI.HtmlControls.HtmlGenericControl("h5");
             cardHeader.Attributes["class"] = "card-header";
-            cardHeader.InnerText = $"Semifinal {semifinalfinal}";
+            cardHeader.InnerText = $"Semifinal {semifinal}";
             cardDiv.Controls.Add(cardHeader);
 
             // Crea il div per la tabella
@@ -903,6 +987,7 @@ namespace HemaTournamentWebSite
 
             // Crea la tabella
             Table table1 = BranchSemifinalTable(atleta1, atleta2);
+            FillSemifinalBracket(semifinal, atleta1, atleta2);
 
             tableDiv.Controls.Add(table1);
 
@@ -917,6 +1002,25 @@ namespace HemaTournamentWebSite
             var mainDiv = FindControl("navs-pills-justified-home") as System.Web.UI.HtmlControls.HtmlGenericControl;
             divSemifinal.Controls.Add(cardDiv);
             divSemifinal.Controls.Add(hr);
+        }
+
+        private void FillSemifinalBracket(int semifinal, AtletaEliminatorie atleta1, AtletaEliminatorie atleta2)
+        {
+            if(semifinal ==1)
+            {
+                lblBracketSth1_1.Text = atleta1.BracketName;
+                lblBracketSth1_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracketSth1_2.Text = atleta2.BracketName;
+                lblBracketSth1_2Score.Text = atleta2.PuntiFatti.ToString();
+
+            }
+            else
+            {
+                lblBracketSth2_1.Text = atleta1.BracketName;
+                lblBracketSth2_1Score.Text = atleta1.PuntiFatti.ToString();
+                lblBracketSth2_2.Text = atleta2.BracketName;
+                lblBracketSth2_2Score.Text = atleta2.PuntiFatti.ToString();
+            }
         }
 
         private Table BranchSemifinalTable(AtletaEliminatorie atletaEliminatorie1, AtletaEliminatorie atletaEliminatorie2)
@@ -990,9 +1094,16 @@ namespace HemaTournamentWebSite
 
         }
 
+        private void FillFinalBracket()
+        {
+
+        }
+
         private Table FinalTable(List<AtletaEliminatorie> poolOne, List<AtletaEliminatorie> poolTwo)
         {
             Tuple<string, string> firstAndSecondPlace = GetFirstAndSecondPlace(poolOne);
+
+            lblBracketFth1_1.Text = firstAndSecondPlace.Item1.Split('#')[1];
 
             var thirdPlace1 = SqlDal_Fighters.GetAtletaById(poolTwo[0].IdAtleta).Asd + "#" + poolTwo[0].Cognome + " " + poolTwo[0].Nome;
             var thirdPlace2 = SqlDal_Fighters.GetAtletaById(poolTwo[3].IdAtleta).Asd + "#" + poolTwo[3].Cognome + " " + poolTwo[3].Nome;
