@@ -50,6 +50,19 @@
             text-align:center;
         }
 
+        .match-box-silver {
+            width: 160px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 2px 0;
+            padding: 4px;
+            background: linear-gradient(to bottom, #efecec, #c4c4c4);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.2s ease;
+            text-align:center;
+        }
+
         .match-box:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -66,6 +79,15 @@
         }
 
         .player-winner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9em;
+            color: #000;
+        }
+        .player-winner-silver {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -395,6 +417,7 @@
                 <div class="modal fade" id="modalBracketScrollable" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog modal-fullscreen modal-dialog-scrollable" role="document">
                         <div class="modal-content">
+
                             <div class="modal-body">
                                 <div class="table-responsive text-nowrap" id="divbracket" runat="server" style="overflow-x:auto; white-space:nowrap;">
                                     <div class="tournament-bracket" id="tournamentBracket16th"  runat="server">
@@ -460,7 +483,7 @@
                                         </div>
 
                                         <!-- Round 2 - Left Side -->
-                                        <div class="round">
+                                        <div class="round" id="LeftZone8th" runat="server">
                                             <div class="match">
                                                 <div class="match-box">
                                                     <div class="player"><asp:Label runat="server" ID="lblBracket8th1_1"></asp:Label> <span class="score"><asp:Label runat="server" ID="lblBracket8th1_1Score"></asp:Label></span></div>
@@ -521,10 +544,12 @@
                                         </div>
                                         <div class="round">
                                             <div class="match">
-                                                <br><br><br><br><br><br><br><br><br>
+                                                <br><br><br><br><br><br><br><br><br>                                                
                                                 <div class="match-box-winner">
-                                                    <div class="player-winner" style="align-content:center"><asp:Label runat="server" ID="lblBracketFth1_1"></asp:Label></div>
-                                                    
+                                                    <div class="player-winner" style="align-content:center"><asp:Label runat="server" ID="lblBracketWinner"></asp:Label></div>                                                    
+                                                </div>
+                                                <div class="match-box-silver">
+                                                    <div class="player-winner-silver" style="align-content:center"><asp:Label runat="server" ID="lblBracketSilver"></asp:Label></div>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -557,7 +582,7 @@
                                         </div>
 
                                         <!-- Round 2 - Right Side -->
-                                        <div class="round">
+                                        <div class="round" id="RightZone8th" runat="server">
                                             
                                             <div class="match">
                                                 <div class="match-box">

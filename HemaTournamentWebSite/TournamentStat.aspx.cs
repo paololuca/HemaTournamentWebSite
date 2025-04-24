@@ -438,10 +438,16 @@ namespace HemaTournamentWebSite
             if (disciplineId == 0 || tournamentId == 0)
                 return;
 
-            if(atletiAmmessiEliminatorie != 32)
+            if(atletiAmmessiEliminatorie < 32)
             {
                 LeftZone16th.Visible = false;
                 RightZone16th.Visible = false;
+            }
+
+            if (atletiAmmessiEliminatorie < 16)
+            {
+                LeftZone8th.Visible = false;
+                RightZone8th.Visible = false;
             }
 
         }
@@ -1103,7 +1109,8 @@ namespace HemaTournamentWebSite
         {
             Tuple<string, string> firstAndSecondPlace = GetFirstAndSecondPlace(poolOne);
 
-            lblBracketFth1_1.Text = firstAndSecondPlace.Item1.Split('#')[1];
+            lblBracketWinner.Text = firstAndSecondPlace.Item1.Split('#')[1];
+            lblBracketSilver.Text = firstAndSecondPlace.Item2.Split('#')[1];
 
             var thirdPlace1 = SqlDal_Fighters.GetAtletaById(poolTwo[0].IdAtleta).Asd + "#" + poolTwo[0].Cognome + " " + poolTwo[0].Nome;
             var thirdPlace2 = SqlDal_Fighters.GetAtletaById(poolTwo[3].IdAtleta).Asd + "#" + poolTwo[3].Cognome + " " + poolTwo[3].Nome;

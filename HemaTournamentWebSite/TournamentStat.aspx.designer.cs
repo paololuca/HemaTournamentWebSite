@@ -474,6 +474,15 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.WebControls.Label lblBracket16th4_8Score;
 
         /// <summary>
+        /// LeftZone8th control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LeftZone8th;
+
+        /// <summary>
         /// lblBracket8th1_1 control.
         /// </summary>
         /// <remarks>
@@ -726,13 +735,22 @@ namespace HemaTournamentWebSite
         protected global::System.Web.UI.WebControls.Label lblBracketSth1_2Score;
 
         /// <summary>
-        /// lblBracketFth1_1 control.
+        /// lblBracketWinner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBracketFth1_1;
+        protected global::System.Web.UI.WebControls.Label lblBracketWinner;
+
+        /// <summary>
+        /// lblBracketSilver control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBracketSilver;
 
         /// <summary>
         /// lblBracketSth2_1 control.
@@ -841,6 +859,15 @@ namespace HemaTournamentWebSite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblBracket4th3_2Score;
+
+        /// <summary>
+        /// RightZone8th control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl RightZone8th;
 
         /// <summary>
         /// lblBracket8th2_1 control.
