@@ -44,3 +44,8 @@ HemaTournamentWebSite/obj/Release/
 /.vs
 /.vs
 /HemaTournamentWebSiteBLL/obj
+/HemaTournamentWebSiteAPI/obj
+/.vs
+/.vs
+/.vs/HemaTournamentWebSite
+/HemaTournamentWebSiteAPI/bin
